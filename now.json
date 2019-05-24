@@ -3,7 +3,6 @@
   "version": 2,
   "builds": [
     { "src": "./public/*.html", "use": "@now/static" },
-    { "src": "./public/*.css", "use": "@now/static" },
     { "src": "./public/*.js", "use": "@now/node" }
   ]
 }
