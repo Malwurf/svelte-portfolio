@@ -1,6 +1,8 @@
 {
   "name": "Svelte portfolio",
   "version": 2,
-  "builds": [{ "src": "public/", "use": "@now/static" }],
-  "root": "public/"
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "public" }}
+  ],
+  "headers":{"cache-control":"s-maxage=0"}
 }
