@@ -1,8 +1,6 @@
 {
   "name": "Svelte portfolio",
   "version": 2,
-  "builds": [
-    { "src": "./public/*.html", "use": "@now/static" },
-    { "src": "./public/*.js", "use": "@now/node" }
-  ]
+  "builds": [{ "src": "public/", "use": "@now/static" }],
+  "root": "public/"
 }
