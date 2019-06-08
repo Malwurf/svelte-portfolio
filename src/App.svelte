@@ -1,11 +1,5 @@
 <script>
-	export let name;
+	import Hamburger from './navbar/hamburger.svelte';
 </script>
 
-<style>
-	h1 {
-		color: purple;
-	}
-</style>
-
-<h1>Hello {name}!</h1>
+<Hamburger/>

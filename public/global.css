@@ -1,3 +1,32 @@
+:root {
+	/* Colors
+	   ========================================================================== */
+		  
+	/* colors inspired SW Last Jedi Poster */
+	--geranium-red: #d9666f;
+	--pegasus-red: #d90404;
+	--crimson-red: #8c030e;
+	--biltong-red: #400101;
+
+	--maastricht-blue: #011c40;
+	--feather-blue: #0d1a26;
+	--corbeau-blue: #0e1126;
+
+	--bleachedsilk-white: #f2f2f2;
+	--sauvignon-white: #f2eae4;
+	--white: #fff;
+
+	--brightlettuce-green: #87dc5a;
+
+
+	
+	/* Transitions
+	   ========================================================================== */
+
+	--transition-time: .33s;
+	--double-transition-time: calc(var(--transition-time) * 2);
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
