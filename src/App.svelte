@@ -1,5 +1,5 @@
 <script>
-	import Hamburger from './navbar/hamburger.svelte';
+	import Navigation from './navigation/Navigation.svelte';
 </script>
 
-<Hamburger/>
+<Navigation/>

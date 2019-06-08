@@ -1,21 +1,21 @@
 <style lang="scss">
-nav {
+.wrapper {
   align-items: center;
   background-color: var(--sauvignon-white);
   display: flex;
   height: 100vh;
   justify-content: center;
-  width: 80px;
+  position: relative;
+  z-index: 3;
 }
-
 .trigger {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 70px;
-  justify-content: center;
-  margin: 0 auto;
-  width: 70px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 70px;
 
   input[type='checkbox'] {
     display:none;
@@ -62,26 +62,26 @@ nav {
   }
 
   label {
+    align-items: center;
     background-color: var(--corbeau-blue);
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     height: 4px;
-    width: 10%;
-    position: relative;
+    justify-content: center;
     left: -10px;
+    position: relative;
     transform-origin: center;
+    width: 10%;
     
     &::before {
-      content: '';
-      height: 4px;
       background-color: var(--corbeau-blue);
+      content: '';
       display: block;
-      position: relative;
+      height: 4px;
       left: 8px;
       min-width: 13px;
+      position: relative;
     }
 
     &::after {
@@ -96,9 +96,9 @@ nav {
     }
 
     &:nth-of-type(2) {
-      transform: rotateZ(180deg);
-      right: -10px;
       left: auto;
+      right: -10px;
+      transform: rotateZ(180deg);
     }
 
     & + label {
@@ -108,11 +108,11 @@ nav {
 }
 </style>
 
-<nav>
+<div class="wrapper">
   <div class="trigger">
-    <input type="checkbox" name="" id="NavigationSwitcher" />
-    <label for="NavigationSwitcher" />
-    <label for="NavigationSwitcher" />
-    <label for="NavigationSwitcher" />
+      <input type="checkbox" name="" id="NavigationTrigger" />
+      <label for="NavigationTrigger" />
+      <label for="NavigationTrigger" />
+      <label for="NavigationTrigger" />
   </div>
-</nav>
+</div>
