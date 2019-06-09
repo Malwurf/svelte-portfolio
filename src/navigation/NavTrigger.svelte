@@ -1,3 +1,13 @@
+<script>
+  import { createEventDispatcher } from 'svelte';
+
+  const dispatch = createEventDispatcher();
+
+  function handleTrigger() {
+		dispatch('trigger', {});
+	}
+</script>
+
 <style lang="scss">
 .wrapper {
   align-items: center;
@@ -110,9 +120,9 @@
 
 <div class="wrapper">
   <div class="trigger">
-      <input type="checkbox" name="" id="NavigationTrigger" />
-      <label for="NavigationTrigger" />
-      <label for="NavigationTrigger" />
-      <label for="NavigationTrigger" />
+      <input type="checkbox" name="NavigationTrigger" id="NavigationTrigger"/>
+      <label for="NavigationTrigger" on:click="{handleTrigger}"/>
+      <label for="NavigationTrigger" on:click="{handleTrigger}"/>
+      <label for="NavigationTrigger" on:click="{handleTrigger}"/>
   </div>
 </div>

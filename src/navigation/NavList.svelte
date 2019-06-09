@@ -1,3 +1,7 @@
+<script>
+    export let opened;
+</script>
+
 <style lang="scss">
     section {
         align-items: flex-start;
@@ -7,10 +11,14 @@
         height: 100vh;
         justify-content: center;
         overflow-y: scroll;
-        // transform: translateX(-330px);
+        transform: translateX(-380px);
         transition: transform var(--transition-time);
         width: 300px;
         z-index: 2;
+
+        &.opened {
+            transform: translateX(0);
+        }
     }
     ul {
         list-style: none;
@@ -40,7 +48,7 @@
     }
 </style>
 
-<section>
+<section class:opened>
     <ul class="navbar-list">
         <li class="item">link1</li>
         <li class="item">link2</li>
