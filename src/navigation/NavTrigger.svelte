@@ -5,7 +5,7 @@
 
   function handleTrigger() {
 		dispatch('trigger', {});
-	}
+  }
 </script>
 
 <style lang="scss">
@@ -32,7 +32,7 @@
   }
 
   input[type='checkbox']:checked {
-    ~ label {
+    ~ span {
       transition: transform var(--transition-time);
 
       &::after {
@@ -71,7 +71,7 @@
     }
   }
 
-  label {
+  span {
     align-items: center;
     background-color: var(--corbeau-blue);
     cursor: pointer;
@@ -111,7 +111,7 @@
       transform: rotateZ(180deg);
     }
 
-    & + label {
+    & + span {
       margin-top: 8px;
     }
   }
@@ -119,10 +119,10 @@
 </style>
 
 <div class="wrapper">
-  <div class="trigger">
-      <input type="checkbox" name="NavigationTrigger" id="NavigationTrigger"/>
-      <label for="NavigationTrigger" on:click="{handleTrigger}"/>
-      <label for="NavigationTrigger" on:click="{handleTrigger}"/>
-      <label for="NavigationTrigger" on:click="{handleTrigger}"/>
-  </div>
+  <label class="trigger">
+      <input type="checkbox" name="NavigationTrigger" id="NavigationTrigger" on:change="{handleTrigger}"/>
+      <span for="NavigationTrigger"/>
+      <span for="NavigationTrigger"/>
+      <span for="NavigationTrigger"/>
+  </label>
 </div>
