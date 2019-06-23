@@ -16,6 +16,6 @@ nav {
 </style>
 
 <nav>
-  <NavTrigger on:trigger={handleTrigger}/>
+  <NavTrigger on:change={handleTrigger}/>
   <NavList opened={opened}/>
 </nav>

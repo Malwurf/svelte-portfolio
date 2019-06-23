@@ -1,11 +1,5 @@
 <script>
-  import { createEventDispatcher } from 'svelte';
 
-  const dispatch = createEventDispatcher();
-
-  function handleTrigger() {
-		dispatch('trigger', {});
-  }
 </script>
 
 <style lang="scss">
@@ -120,7 +114,7 @@
 
 <div class="wrapper">
   <label class="trigger">
-      <input type="checkbox" name="NavigationTrigger" id="NavigationTrigger" on:change="{handleTrigger}"/>
+      <input type="checkbox" name="NavigationTrigger" id="NavigationTrigger" on:change/>
       <span for="NavigationTrigger"/>
       <span for="NavigationTrigger"/>
       <span for="NavigationTrigger"/>
