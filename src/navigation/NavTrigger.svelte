@@ -43,7 +43,7 @@
         transform: rotateZ(450deg) translateX(-3px) translateY(-8px);
 
         &::after {
-          box-shadow: 1px 0px 5px 2px var(--crimson-red);
+          box-shadow: 1px 0 5px 2px var(--crimson-red);
         }
       }
 
@@ -51,7 +51,7 @@
         transform: rotateZ(675deg) translateX(-20px) translateY(-10px);
 
         &::after {
-          box-shadow: 1px 0px 5px 2px var(--corbeau-blue);
+          box-shadow: 1px 0 5px 2px var(--corbeau-blue);
         }
       }
 
@@ -59,7 +59,7 @@
         transform: rotateZ(-495deg) translateX(-9px) translateY(16px);
 
         &::after {
-          box-shadow: 1px 0px 5px 2px var(--brightlettuce-green);
+          box-shadow: 1px 0 5px 2px var(--brightlettuce-green);
         }
       }
     }
