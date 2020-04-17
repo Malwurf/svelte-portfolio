@@ -1,67 +1,60 @@
 <script>
-    export let opened;
+  export let opened;
 </script>
 
 <style lang="scss">
-    section {
-        align-items: flex-start;
-        background-color: var(--feather-blue);
-        box-sizing: border-box;
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-        overflow-y: scroll;
-        transform: translateX(-380px);
-        transition: transform var(--transition-time);
-        width: 300px;
-        z-index: 2;
+  section {
+    align-items: flex-start;
+    background-color: var(--feather-blue);
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    overflow-y: scroll;
+    transform: translateX(-380px);
+    transition: transform var(--transition-time);
+    width: 300px;
+    z-index: 2;
 
-        &.opened {
-            transform: translateX(0);
-        }
+    &.opened {
+      transform: translateX(0);
     }
-    ul {
-        list-style: none;
-        padding: 30px 0 30px;
-        width: 100%;
-        box-sizing: border-box;
-        margin: 0;
+  }
+  ul {
+    list-style: none;
+    padding: 30px 0 30px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
 
-        li {
-            align-items: center;
-            color: var(--bleachedsilk-white);
-            cursor: pointer;
-            display: flex;
-            font-size: 1.2rem;
-            height: 100px;
-            justify-content: center;
+    li {
+      align-items: center;
+      color: var(--bleachedsilk-white);
+      cursor: pointer;
+      display: flex;
+      font-size: 1.2rem;
+      height: 100px;
+      justify-content: center;
 
-            & + li,
-            &:first-of-type {
-                border-top: 2px solid red;
-            }
+      & + li,
+      &:first-of-type {
+        border-top: 2px solid red;
+      }
 
-            &:last-of-type {
-                border-bottom: 2px solid red;
-            }
-        }
+      &:last-of-type {
+        border-bottom: 2px solid red;
+      }
     }
+  }
 </style>
 
 <section class:opened>
-    <ul class="navbar-list">
-        <li class="item">link1</li>
-        <li class="item">link2</li>
-        <li class="item">link3</li>
-        <li class="item">link4</li>
-        <li class="item">link5</li>
-        <li class="item">link6</li>
-        <li class="item">link7</li>
-        <li class="item">link8</li>
-        <li class="item">link9</li>
-        <li class="item">link10</li>
-        <li class="item">link11</li>
-        <li class="item">link12</li>
-        <li class="item">link13</li>
-    </ul>
+  <ul class="navbar-list">
+    <li class="item">Start</li>
+    <li class="item">About</li>
+    <li class="item">CV</li>
+    <li class="item">Portfolio</li>
+    <li class="item">Interests</li>
+    <li class="item">Contact</li>
+  </ul>
 </section>
