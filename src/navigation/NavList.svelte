@@ -1,5 +1,9 @@
 <script>
+  import {createEventDispatcher} from 'svelte';
+
   export let opened;
+
+  const dispatch = createEventDispatcher();
 </script>
 
 <style lang="scss">
@@ -11,6 +15,7 @@
     height: 100vh;
     justify-content: center;
     overflow-y: scroll;
+    position: absolute;
     transform: translateX(-380px);
     transition: transform var(--transition-time);
     width: 300px;
@@ -49,12 +54,12 @@
 </style>
 
 <section class:opened>
-  <ul class="navbar-list">
-    <li class="item">Start</li>
-    <li class="item">About</li>
-    <li class="item">CV</li>
-    <li class="item">Portfolio</li>
-    <li class="item">Interests</li>
-    <li class="item">Contact</li>
+  <ul class="navbar-list" on:click>
+    <li class="item" on:click={() => {dispatch('StartPage')}}>Start</li>
+    <li class="item" on:click={() => {dispatch('AboutPage')}}>About</li>
+    <li class="item" on:click={() => {dispatch('CvPage')}}>CV</li>
+    <li class="item" on:click={() => {dispatch('PortfolioPage')}}>Portfolio</li>
+    <li class="item" on:click={() => {dispatch('HobbyPage')}}>Hobby</li>
+    <li class="item" on:click={() => {dispatch('ContactPage')}}>Contact</li>
   </ul>
 </section>

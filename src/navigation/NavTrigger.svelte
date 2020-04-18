@@ -1,7 +1,3 @@
-<script>
-
-</script>
-
 <style lang="scss">
   .wrapper {
     align-items: center;
@@ -11,6 +7,7 @@
     justify-content: center;
     position: relative;
     z-index: 3;
+    width: 70px;
   }
   .trigger {
     align-items: center;
@@ -112,12 +109,17 @@
   }
 </style>
 
+<script>
+  export let isChecked;
+</script>
+
 <div class="wrapper">
   <label class="trigger">
     <input
       type="checkbox"
       name="NavigationTrigger"
       id="NavigationTrigger"
+      bind:checked={isChecked}
       on:change />
     <span for="NavigationTrigger" />
     <span for="NavigationTrigger" />
