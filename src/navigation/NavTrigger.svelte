@@ -1,7 +1,12 @@
+<script>
+  export let isChecked;
+</script>
+
 <style lang="scss">
   .wrapper {
     align-items: center;
-    background-color: var(--sauvignon-white);
+    background-color: var(--maastricht-blue);
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.21);
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -11,6 +16,7 @@
   }
   .trigger {
     align-items: center;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     height: 70px;
@@ -40,7 +46,7 @@
           transform: rotateZ(450deg) translateX(-3px) translateY(-8px);
 
           &::after {
-            box-shadow: 1px 0 5px 2px var(--crimson-red);
+            box-shadow: 1px 0 5px 2px var(--pegasus-red);
           }
         }
 
@@ -48,7 +54,7 @@
           transform: rotateZ(675deg) translateX(-20px) translateY(-10px);
 
           &::after {
-            box-shadow: 1px 0 5px 2px var(--corbeau-blue);
+            box-shadow: 1px 0 5px 2px var(--just-blue);
           }
         }
 
@@ -64,8 +70,7 @@
 
     span {
       align-items: center;
-      background-color: var(--corbeau-blue);
-      cursor: pointer;
+      background-color: var(--bleachedsilk-white);
       display: flex;
       flex-direction: row;
       height: 4px;
@@ -76,7 +81,7 @@
       width: 10%;
 
       &::before {
-        background-color: var(--corbeau-blue);
+        background-color: var(--bleachedsilk-white);
         content: "";
         display: block;
         height: 4px;
@@ -86,7 +91,7 @@
       }
 
       &::after {
-        background-color: var(--corbeau-blue);
+        background-color: var(--bleachedsilk-white);
         content: "";
         display: block;
         height: 4px;
@@ -108,10 +113,6 @@
     }
   }
 </style>
-
-<script>
-  export let isChecked;
-</script>
 
 <div class="wrapper">
   <label class="trigger">
