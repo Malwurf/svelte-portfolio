@@ -1,31 +1,29 @@
 <script>
-  import NavList from './NavList.svelte';
-  import NavTrigger from './NavTrigger.svelte';
+  import NavList from "./NavList.svelte";
+  import NavTrigger from "./NavTrigger.svelte";
 
   let opened = false;
-  let ChoosenPage = 'StartPage';
+  let ChoosenPage = "StartPage";
 
   function handleTrigger() {
     opened = !opened;
-  };
+  }
 </script>
 
 <style>
-nav {
-  display: flex;
-}
+  nav {
+    display: flex;
+  }
 </style>
 
 <nav>
-  <NavTrigger on:change={handleTrigger} isChecked="{opened}"/>
+  <NavTrigger on:change={handleTrigger} isChecked={opened} />
   <NavList
     {opened}
     on:AboutPage
     on:StartPage
     on:CvPage
     on:PortfolioPage
-    on:HobbyPage
     on:ContactPage
-    on:click={handleTrigger}
-  />
+    on:click={handleTrigger} />
 </nav>

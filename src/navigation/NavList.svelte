@@ -1,5 +1,5 @@
 <script>
-  import {createEventDispatcher} from 'svelte';
+  import { createEventDispatcher } from "svelte";
 
   export let opened;
 
@@ -55,11 +55,40 @@
 
 <section class:opened>
   <ul class="navbar-list" on:click>
-    <li class="item" on:click={() => {dispatch('StartPage')}}>Start</li>
-    <li class="item" on:click={() => {dispatch('AboutPage')}}>About</li>
-    <li class="item" on:click={() => {dispatch('CvPage')}}>CV</li>
-    <li class="item" on:click={() => {dispatch('PortfolioPage')}}>Portfolio</li>
-    <li class="item" on:click={() => {dispatch('HobbyPage')}}>Hobby</li>
-    <li class="item" on:click={() => {dispatch('ContactPage')}}>Contact</li>
+    <li
+      class="item"
+      on:click={() => {
+        dispatch('StartPage');
+      }}>
+      Start
+    </li>
+    <li
+      class="item"
+      on:click={() => {
+        dispatch('AboutPage');
+      }}>
+      About
+    </li>
+    <li
+      class="item"
+      on:click={() => {
+        dispatch('CvPage');
+      }}>
+      CV
+    </li>
+    <li
+      class="item"
+      on:click={() => {
+        dispatch('PortfolioPage');
+      }}>
+      Portfolio
+    </li>
+    <li
+      class="item"
+      on:click={() => {
+        dispatch('ContactPage');
+      }}>
+      Contact
+    </li>
   </ul>
 </section>
