@@ -1,10 +1,10 @@
 <script>
-  import AboutPage from "./pages/about/about.svelte";
-  import ContactPage from "./pages/contact/contact.svelte";
+  import AboutPage from "./pages/about/About.svelte";
+  import ContactPage from "./pages/contact/Contact.svelte";
   import CvPage from "./pages/cv/cv.svelte";
   import Navigation from "./navigation/Navigation.svelte";
-  import PortfolioPage from "./pages/portfolio/portfolio.svelte";
-  import StartPage from "./pages/start/start.svelte";
+  import PortfolioPage from "./pages/portfolio/Portfolio.svelte";
+  import StartPage from "./pages/start/Start.svelte";
 
   let renderComponent = StartPage;
 </script>
