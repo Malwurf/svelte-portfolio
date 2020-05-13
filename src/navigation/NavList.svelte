@@ -72,13 +72,6 @@
     <li
       class="item"
       on:click={() => {
-        dispatch('CvPage');
-      }}>
-      CV
-    </li>
-    <li
-      class="item"
-      on:click={() => {
         dispatch('PortfolioPage');
       }}>
       Portfolio

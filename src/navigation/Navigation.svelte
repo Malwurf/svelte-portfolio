@@ -22,7 +22,6 @@
     {opened}
     on:AboutPage
     on:StartPage
-    on:CvPage
     on:PortfolioPage
     on:ContactPage
     on:click={handleTrigger} />
