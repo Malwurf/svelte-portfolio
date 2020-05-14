@@ -17,6 +17,7 @@
 
 <style lang="scss">
   div :global(li svg) {
+    fill: var(--white);
     width: 21px;
   }
   div {
@@ -24,12 +25,24 @@
     box-sizing: border-box;
     display: flex;
     height: 100vh;
-    transform: translateX(-380px);
     transition: transform var(--transition-time);
     z-index: 2;
 
     &.active {
-      transform: translateX(0);
+      ul li {
+        &:first-of-type {
+          transform: translateX(21px);
+        }
+        &:nth-of-type(2) {
+          transform: translateX(34px);
+        }
+        &:nth-of-type(3) {
+          transform: translateX(34px);
+        }
+        &:last-of-type {
+          transform: translateX(21px);
+        }
+      }
     }
   }
   ul {
@@ -43,8 +56,9 @@
 
     li {
       align-items: center;
+      background-color: var(--maastricht-blue);
       border-radius: 50%;
-      border: 1px solid transparent;
+      border: 3px solid transparent;
       box-sizing: border-box;
       color: var(--bleachedsilk-white);
       cursor: pointer;
@@ -54,21 +68,25 @@
       justify-content: center;
       margin-bottom: 13px;
       margin-top: 13px;
-      transition: border-color var(--transition-time);
+      transition: border-color var(--transition-time),
+        transform var(--transition-time);
       width: 55px;
 
       &:hover {
         border-color: var(--persian-red);
       }
 
-      &:first-of-type,
-      &:last-of-type {
-        transform: translateX(21px);
+      &:first-of-type {
+        transform: translateX(-89px);
       }
-
-      &:nth-of-type(2),
+      &:nth-of-type(2) {
+        transform: translateX(-144px);
+      }
       &:nth-of-type(3) {
-        transform: translateX(34px);
+        transform: translateX(-233px);
+      }
+      &:last-of-type {
+        transform: translateX(-377px);
       }
     }
   }
