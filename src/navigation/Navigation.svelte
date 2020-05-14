@@ -2,11 +2,11 @@
   import NavList from "./NavList.svelte";
   import NavTrigger from "./NavTrigger.svelte";
 
-  let opened = false;
+  let active = false;
   let ChoosenPage = "StartPage";
 
   function handleTrigger() {
-    opened = !opened;
+    active = !active;
   }
 </script>
 
@@ -17,9 +17,9 @@
 </style>
 
 <nav>
-  <NavTrigger on:change={handleTrigger} isChecked={opened} />
+  <NavTrigger on:change={handleTrigger} isChecked={active} />
   <NavList
-    {opened}
+    {active}
     on:AboutPage
     on:StartPage
     on:PortfolioPage

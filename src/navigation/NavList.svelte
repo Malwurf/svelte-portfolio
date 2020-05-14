@@ -1,87 +1,112 @@
 <script>
   import { createEventDispatcher } from "svelte";
 
-  export let opened;
+  export let active;
 
   const dispatch = createEventDispatcher();
+
+  const envelopeIcon =
+    '<svg viewBox="0 0 479.058 479.058" xmlns="http://www.w3.org/2000/svg"><path d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 015.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"/></svg>';
+  const resumeIcom =
+    '<svg viewBox="0 0 496.231 496.231" xmlns="http://www.w3.org/2000/svg"><path d="M389.145 0h-282c-26.468 0-48 21.533-48 48 0 356.953-.389 335.402.829 339.058a16.094 16.094 0 003.831 6.227c.998 1.002 98.184 98.301 99.598 99.387 6.322 4.869-3.396 3.328 225.742 3.328 26.468 0 48-21.533 48-48V48c0-26.467-21.532-48-48-48zm-232 441.373L113.772 398h43.373zm248 6.627c0 8.822-7.178 16-16 16h-200v-82c0-8.836-7.163-16-16-16h-82V48c0-8.822 7.178-16 16-16h282c8.822 0 16 7.178 16 16zm-51-125c0 8.836-7.163 16-16 16h-181c-8.837 0-16-7.164-16-16s7.163-16 16-16h181c8.837 0 16 7.164 16 16zm0 82c0 8.836-7.163 16-16 16h-103c-8.837 0-16-7.164-16-16s7.163-16 16-16h103c8.837 0 16 7.164 16 16zM247.489 168.077c29.694 0 53.852-24.158 53.852-53.852s-24.157-53.852-53.852-53.852-53.852 24.158-53.852 53.852 24.158 53.852 53.852 53.852zm0-75.704c12.049 0 21.852 9.803 21.852 21.852s-9.803 21.852-21.852 21.852-21.852-9.803-21.852-21.852 9.803-21.852 21.852-21.852zM166.47 246.451v-21.938c0-13.835 8.163-26.42 20.797-32.062l25.376-11.331c4.255-1.9 1.275-1.39 62.806-1.39 4.498 0 4.344.417 31.899 12.72 12.634 5.642 20.797 18.227 20.797 32.062v21.938c0 8.836-7.163 16-16 16s-16-7.164-16-16v-21.938a3.116 3.116 0 00-1.844-2.842l-22.263-9.94h-49.462l-22.263 9.94a3.117 3.117 0 00-1.844 2.842v21.938c0 8.836-7.163 16-16 16s-15.999-7.163-15.999-15.999z"/></svg>';
+  const homeIcon =
+    '<svg viewBox="0 1 511 511.999" xmlns="http://www.w3.org/2000/svg"><path d="M498.7 222.695c-.016-.011-.028-.027-.04-.039L289.805 13.81C280.902 4.902 269.066 0 256.477 0c-12.59 0-24.426 4.902-33.332 13.809L14.398 222.55c-.07.07-.144.144-.21.215-18.282 18.386-18.25 48.218.09 66.558 8.378 8.383 19.44 13.235 31.273 13.746.484.047.969.07 1.457.07h8.32v153.696c0 30.418 24.75 55.164 55.168 55.164h81.711c8.285 0 15-6.719 15-15V376.5c0-13.879 11.293-25.168 25.172-25.168h48.195c13.88 0 25.168 11.29 25.168 25.168V497c0 8.281 6.715 15 15 15h81.711c30.422 0 55.168-24.746 55.168-55.164V303.14h7.719c12.586 0 24.422-4.903 33.332-13.813 18.36-18.367 18.367-48.254.027-66.633zm-21.243 45.422a17.03 17.03 0 01-12.117 5.024H442.62c-8.285 0-15 6.714-15 15v168.695c0 13.875-11.289 25.164-25.168 25.164h-66.71V376.5c0-30.418-24.747-55.168-55.169-55.168H232.38c-30.422 0-55.172 24.75-55.172 55.168V482h-66.71c-13.876 0-25.169-11.29-25.169-25.164V288.14c0-8.286-6.715-15-15-15H48a13.9 13.9 0 00-.703-.032c-4.469-.078-8.66-1.851-11.8-4.996-6.68-6.68-6.68-17.55 0-24.234.003 0 .003-.004.007-.008l.012-.012L244.363 35.02A17.003 17.003 0 01256.477 30c4.574 0 8.875 1.781 12.113 5.02l208.8 208.796.098.094c6.645 6.692 6.633 17.54-.031 24.207zm0 0"/></svg>';
+  const cvIcon =
+    '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 24h-13A2.503 2.503 0 013 21.5v-19C3 1.122 4.121 0 5.5 0h13C19.879 0 21 1.122 21 2.5v19c0 1.378-1.121 2.5-2.5 2.5zM5.5 1C4.673 1 4 1.673 4 2.5v19c0 .827.673 1.5 1.5 1.5h13c.827 0 1.5-.673 1.5-1.5v-19c0-.827-.673-1.5-1.5-1.5z"/><path d="M17.5 17h-11a.5.5 0 010-1h11a.5.5 0 010 1zM17.5 13h-11a.5.5 0 010-1h11a.5.5 0 010 1zM17.5 21h-11a.5.5 0 010-1h11a.5.5 0 010 1zM10.5 9h-2C7.673 9 7 8.327 7 7.5v-3C7 3.673 7.673 3 8.5 3h2a.5.5 0 010 1h-2a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h2a.5.5 0 010 1zM15 9a.5.5 0 01-.479-.356l-1.5-5a.5.5 0 11.957-.288L15 6.76l1.021-3.403a.5.5 0 11.957.288l-1.5 5A.499.499 0 0115 9z"/></svg>';
 </script>
 
 <style lang="scss">
-  section {
-    align-items: flex-start;
-    background-color: var(--feather-blue);
+  div :global(li svg) {
+    width: 21px;
+  }
+  div {
+    align-items: center;
     box-sizing: border-box;
     display: flex;
     height: 100vh;
-    justify-content: center;
-    overflow-y: scroll;
-    position: absolute;
     transform: translateX(-380px);
     transition: transform var(--transition-time);
-    width: 300px;
     z-index: 2;
 
-    &.opened {
+    &.active {
       transform: translateX(0);
     }
   }
   ul {
-    list-style: none;
-    padding: 30px 0 30px;
-    width: 100%;
     box-sizing: border-box;
+    list-style: none;
     margin: 0;
+    padding-left: 0;
+    position: relative;
+    width: 100%;
+    z-index: 2;
 
     li {
       align-items: center;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      box-sizing: border-box;
       color: var(--bleachedsilk-white);
       cursor: pointer;
       display: flex;
       font-size: 1.2rem;
-      height: 100px;
+      height: 55px;
       justify-content: center;
+      margin-bottom: 13px;
+      margin-top: 13px;
+      transition: border-color var(--transition-time);
+      width: 55px;
 
-      & + li,
-      &:first-of-type {
-        border-top: 2px solid red;
+      &:hover {
+        border-color: var(--persian-red);
       }
 
+      &:first-of-type,
       &:last-of-type {
-        border-bottom: 2px solid red;
+        transform: translateX(21px);
+      }
+
+      &:nth-of-type(2),
+      &:nth-of-type(3) {
+        transform: translateX(34px);
       }
     }
   }
 </style>
 
-<section class:opened>
+<div class:active>
   <ul class="navbar-list" on:click>
     <li
       class="item"
       on:click={() => {
         dispatch('StartPage');
-      }}>
-      Start
+      }}
+      title="Homepage">
+      {@html homeIcon}
     </li>
     <li
       class="item"
       on:click={() => {
         dispatch('AboutPage');
-      }}>
-      About
+      }}
+      title="About me">
+      {@html cvIcon}
     </li>
     <li
       class="item"
       on:click={() => {
         dispatch('PortfolioPage');
-      }}>
-      Portfolio
+      }}
+      title="Portfolio">
+      {@html resumeIcom}
     </li>
     <li
       class="item"
       on:click={() => {
         dispatch('ContactPage');
-      }}>
-      Contact
+      }}
+      title="Contact">
+      {@html envelopeIcon}
     </li>
   </ul>
-</section>
+</div>

@@ -100,7 +100,7 @@
     padding: 34px;
     position: relative;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
 
     .photo {
       border-radius: 50%;
@@ -148,7 +148,6 @@
     transition: transform var(--transition-time),
       box-shadow var(--transition-time);
     width: 100%;
-    z-index: 1;
 
     .link {
       color: var(--persian-red);
