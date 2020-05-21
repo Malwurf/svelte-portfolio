@@ -1,6 +1,6 @@
 <script>
-  const whoAmI = "I'm Przemek";
-  const jobTitle = "< Frontend developer />";
+  const whoAmI = "I am Przemek";
+  const jobTitle = "< Call me Krecik />";
 </script>
 
 <style lang="scss">
