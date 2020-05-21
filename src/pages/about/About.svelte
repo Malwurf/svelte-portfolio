@@ -63,6 +63,7 @@
   .headline {
     &.red {
       color: var(--persian-red);
+      margin: 0;
     }
 
     &.blue {
