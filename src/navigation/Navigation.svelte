@@ -1,3 +1,9 @@
+<style>
+  nav {
+    display: flex;
+  }
+</style>
+
 <script>
   import NavList from "./NavList.svelte";
   import NavTrigger from "./NavTrigger.svelte";
@@ -10,19 +16,15 @@
   }
 </script>
 
-<style>
-  nav {
-    display: flex;
-  }
-</style>
-
 <nav>
   <NavTrigger on:change={handleTrigger} isChecked={active} />
   <NavList
     {active}
     on:AboutPage
-    on:StartPage
-    on:PortfolioPage
     on:ContactPage
-    on:click={handleTrigger} />
+    on:ExperiencePage
+    on:SkillsPage
+    on:StartPage
+    on:click={handleTrigger}
+  />
 </nav>
