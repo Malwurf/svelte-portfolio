@@ -3,14 +3,16 @@
     {
       symbol: "JS",
       name: "JavaScript",
-      description: "desc here",
-      category: "soft"
+      description:
+        "I'm not a JS ninja, but I'm familiar with ES6 syntax and know the difference between ECMAScript and JavaScript.",
+      category: "Skill"
     },
     {
       symbol: "SE",
       name: "Svelte",
-      description: "desc here",
-      category: "soft"
+      description:
+        "Great JavaScript transpiler. I love that syntax, this page was written in Svelte.",
+      category: "Skill"
     },
     {
       symbol: "",
@@ -30,101 +32,130 @@
       description: "",
       category: "spacer"
     },
-    { symbol: "HL", name: "HTML", description: "desc here", category: "soft" },
-    { symbol: "SS", name: "SASS", description: "desc here", category: "soft" },
-    { symbol: "LS", name: "Less", description: "desc here", category: "soft" },
-    { symbol: "CS", name: "CSS", description: "desc here", category: "soft" },
+    {
+      symbol: "HL",
+      name: "HTML",
+      description: "I know HTML 5 syntax and I write semantic code.",
+      category: "Skill"
+    },
+    {
+      symbol: "SS",
+      name: "SASS",
+      description: "I love SASS. It should replace plain CSS.",
+      category: "Skill"
+    },
+    {
+      symbol: "LS",
+      name: "Less",
+      description: "I like SASS instead less but I know both syntaxes.",
+      category: "Skill"
+    },
+    {
+      symbol: "CS",
+      name: "CSS",
+      description: "I know HTML syntax and I write semantic code.",
+      category: "Skill"
+    },
     {
       symbol: "JQ",
       name: "jQuery",
-      description: "desc here",
-      category: "soft"
+      description:
+        "I've worked using that library a lot but now we have better solutions e.g. Svelte / React or Vanilla JS.",
+      category: "Skill"
     },
     {
       symbol: "BP",
       name: "Bootstrap",
-      description: "desc here",
-      category: "soft"
+      description:
+        "I know very well this CSS framework but I prefer to write my own styles to projects if I can.",
+      category: "Skill"
     },
-    { symbol: "PA", name: "PWA", description: "desc here", category: "soft" },
-    { symbol: "RD", name: "RWD", description: "desc here", category: "soft" },
+    {
+      symbol: "PA",
+      name: "PWA",
+      description:
+        "I know the core assumption of PWA. I can implement a default functionalities e.g. offline first.",
+      category: "Skill"
+    },
+    {
+      symbol: "RD",
+      name: "RWD",
+      description:
+        "I use the Responsive Web Design concept every day. Mobile users are most important!",
+      category: "Skill"
+    },
     {
       symbol: "FX",
       name: "Flexbox",
-      description: "desc here",
-      category: "soft"
+      description: "Flexbox concept is my best friend!",
+      category: "Skill"
     },
     {
       symbol: "MO",
       name: "Magento",
-      description: "desc here",
-      category: "soft"
+      description:
+        "I had the Magento project for about one year but I don't like that eCommerce system.",
+      category: "Skill"
     },
-    { symbol: "GT", name: "Git", description: "desc here", category: "soft" },
+    {
+      symbol: "GT",
+      name: "Git",
+      description: "In case of fire, git commit, git push and leave bulding!",
+      category: "Skill"
+    },
     {
       symbol: "PS",
       name: "Photoshop",
-      description: "desc here",
-      category: "soft"
+      description:
+        "I'm NOT a Graphic Designer but I feel fluent in cutting graphics for websites.",
+      category: "Tool"
     },
     {
       symbol: "AI",
       name: "Illustrator",
-      description: "desc here",
-      category: "soft"
+      description: "Same as Photoshop but in Illustrator :)",
+      category: "Tool"
     },
-    { symbol: "MO", name: "MacOS", description: "desc here", category: "soft" },
-    { symbol: "JI", name: "JIRA", description: "desc here", category: "soft" },
-    { symbol: "SL", name: "Slack", description: "desc here", category: "soft" },
+    {
+      symbol: "MO",
+      name: "MacOS",
+      description:
+        "I'm experienced in the Apple ecosystem and I love to work on Macs. MacOS combines Linux stability and Windows UX.",
+      category: "Tool"
+    },
+    {
+      symbol: "JI",
+      name: "JIRA",
+      description:
+        "I have 2+ years of experience working on Jira but I'm not experienced like Project Manager.",
+      category: "Tool"
+    },
+    {
+      symbol: "SL",
+      name: "Slack",
+      description: "Great to be here :)",
+      category: "Tool"
+    },
     {
       symbol: "TL",
       name: "Trello",
-      description: "desc here",
-      category: "soft"
-    },
-
-    {
-      symbol: "AP",
-      name: "Affinity Photo",
-      description: "desc here",
-      category: "soft"
-    },
-    {
-      symbol: "AD",
-      name: "Affinity Designer",
-      description: "desc here",
-      category: "soft"
+      description:
+        "Everyone knows that is the best task manager! Simply and easy to use.",
+      category: "Tool"
     },
     {
       symbol: "SH",
       name: "Sketch",
-      description: "desc here",
-      category: "soft"
-    },
-    { symbol: "FI", name: "Figma", description: "desc here", category: "soft" },
-    {
-      symbol: "ZN",
-      name: "Zeplin",
-      description: "desc here",
-      category: "soft"
+      description:
+        "I know how to cut icons and graphics from mockups and use it on a web page.",
+      category: "Tool"
     },
     {
-      symbol: "RW",
-      name: "Remote Work",
-      description: "desc here",
-      category: "soft"
+      symbol: "FI",
+      name: "Figma",
+      description: "Figma is online version of Sketch ;)",
+      category: "Tool"
     },
-    {
-      symbol: "CH",
-      name: "Chatty",
-      description: "desc here",
-      category: "soft"
-    },
-    { symbol: "YN", name: "Yarn", description: "desc here", category: "soft" },
-    { symbol: "NP", name: "NPM", description: "desc here", category: "soft" },
-
-    { symbol: "GP", name: "Gulp", description: "desc here", category: "soft" },
-
     {
       symbol: "",
       name: "",
@@ -132,23 +163,84 @@
       category: "spacer"
     },
     {
-      symbol: "MO",
-      name: "Microsoft Office",
-      description: "desc here",
-      category: "soft"
+      symbol: "EL",
+      name: "Email",
+      description:
+        "I don't like it, but I have experience with making email templates.",
+      category: "Skill"
     },
-    { symbol: "EL", name: "Email", description: "desc here", category: "soft" },
     {
-      symbol: "GD",
-      name: "Good Organised",
-      description: "desc here",
-      category: "soft"
+      symbol: "NP",
+      name: "NPM",
+      description:
+        "IMO there is no big difference to use NPM or Yarn in a project but no both!",
+      category: "Tool"
+    },
+    {
+      symbol: "GP",
+      name: "Gulp",
+      description:
+        "I know how to add gulp to existing projects and automate some tasks making gulp pipes.",
+      category: "Skill"
     },
     {
       symbol: "AE",
       name: "After Effects",
-      description: "desc here",
-      category: "soft"
+      description:
+        "A long time ago in a galaxy... Yes, I did a couple of movies with special effects. I'm a bit ashamed of the effect but it was my studies project.",
+      category: "Tool"
+    },
+    {
+      symbol: "MO",
+      name: "Microsoft Office",
+      description:
+        "I know default Office programs, Excel, Word, PowerPoint, but nope, I will not write a game in excel using VBA... maybe using StackOverflow ;)",
+      category: "Tool"
+    },
+    {
+      symbol: "",
+      name: "",
+      description: "",
+      category: "spacer"
+    },
+    {
+      symbol: "",
+      name: "",
+      description: "",
+      category: "spacer"
+    },
+    {
+      symbol: "",
+      name: "",
+      description: "",
+      category: "spacer"
+    },
+    {
+      symbol: "",
+      name: "",
+      description: "",
+      category: "spacer"
+    },
+    {
+      symbol: "GD",
+      name: "Good Organised",
+      description:
+        "IMO good work organization is required when you work remotely.",
+      category: "Soft"
+    },
+    {
+      symbol: "CH",
+      name: "Chatty",
+      description:
+        "I'm communicative person, but not when I'm fresh in the team :) I tell honestly about my project/team and tasks estimation exceeded.",
+      category: "Soft"
+    },
+    {
+      symbol: "RW",
+      name: "Remote Work",
+      description:
+        "I'm a remote worker from the half of 2019. I feel good with that.",
+      category: "Soft"
     }
   ];
 </script>
@@ -181,10 +273,11 @@
       justify-content: center;
       margin: 8px;
       padding: 8px;
-      width: 89px;
+      position: relative;
       transition: color var(--transition-time),
         border-color var(--transition-time),
         background-color var(--transition-time);
+      width: 89px;
 
       &:hover {
         &:not(.spacer) {
@@ -193,6 +286,9 @@
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
             0 3px 6px rgba(0, 0, 0, 0.23);
           color: var(--white);
+          .description {
+            display: block;
+          }
         }
       }
 
@@ -208,6 +304,20 @@
       .name {
         font-size: 13px;
       }
+
+      .description {
+        background-color: var(--maastricht-blue);
+        border-radius: 5px;
+        display: none;
+        font-size: 13px;
+        left: 50%;
+        padding: 5px 8px;
+        position: absolute;
+        top: calc(100% + 0px);
+        transform: translateX(-50%);
+        width: 233px;
+        z-index: 1;
+      }
     }
   }
 </style>
@@ -218,6 +328,9 @@
       <li class="{skill.category} item">
         <span class="symbol">{skill.symbol}</span>
         <span class="name">{skill.name}</span>
+        <span class="description">
+          [{skill.category}] - {skill.description}
+        </span>
       </li>
     {/each}
   </ul>
