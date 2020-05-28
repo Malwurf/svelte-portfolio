@@ -1,91 +1,117 @@
 <script>
   const jobsList = [
     {
-      name: "Next Computers s.c.",
-      title: "Computer Specialist",
-      description: "Naprawiacz sprzętu.",
-      technologies: [],
-      clients: [],
-      startDate: "04-2013",
-      endDate: "07-2013"
+      name: "Divante Sp. z o.o.",
+      title: "Frontend Developer",
+      description: " ",
+      technologies: ["js", "html", "css", "magento", "jquery", "react"],
+      clients: [
+        "Enea",
+        "Enea - Strefa Zakupów",
+        "Open Loyalty",
+        "Carrefour",
+        "Energa",
+        "Internal",
+        "Distripark"
+      ],
+      startDate: "03-2018",
+      endDate: ""
     },
     {
-      name: "Sygnity S.A.",
-      title: "Software Tester",
-      description: "Desc",
+      name: "panaceum.it",
+      title: "CEO",
+      description: "I've found my own (one-man army) firm!",
       technologies: ["js", "html", "css"],
-      clients: ["Hulk", "Ant-man"],
-      startDate: "12-2013",
-      endDate: "02-2014"
+      clients: [
+        "Divante",
+        "Buswojtex",
+        "Moni",
+        "Posadzki Ostrowski",
+        "Piana Dachy"
+      ],
+      startDate: "03-2018",
+      endDate: ""
     },
     {
-      name: "Freelancer.com",
-      title: "Frontend Ninja",
+      name: "Stark Industries",
+      title: "Jarvis Friend",
+      description: "Nope. That's a joke! Sorry :)",
+      technologies: ["AI"],
+      clients: ["Avengers"],
+      startDate: "01-2018",
+      endDate: "03-2018"
+    },
+    {
+      name: "Lemon Sky J. Walter Thompson Poland",
+      title: "Frontend Developer",
       description:
-        "Volvitur ingreditur id ait mea vero cum autem quod ait Cumque ego illum vero cum unde beata. Commendavi si non dum est in. Dionysiadem tuos ratio puella ut casus, tunc lacrimas effunditis magister cives Tharsis. Puellae addita verbaque capellam sanctissima quid, apollinem existimas filiam rex cum autem quod tamen adnuente rediens eam est se in. Peracta licet ad nomine Maria non ait in modo compungi mulierem volutpat.",
-      technologies: ["js", "html", "css"],
-      clients: ["Hulk", "Ant-man"],
-      startDate: "10-2014",
-      endDate: "11-2014"
-    },
-    {
-      name: "WEBDEVPLUS",
-      title: "Frontend Ninja",
-      description:
-        "Volvitur ingreditur id ait mea vero cum autem quod ait Cumque ego illum vero cum unde beata. Commendavi si non dum est in. Dionysiadem tuos ratio puella ut casus, tunc lacrimas effunditis magister cives Tharsis. Puellae addita verbaque capellam sanctissima quid, apollinem existimas filiam rex cum autem quod tamen adnuente rediens eam est se in. Peracta licet ad nomine Maria non ait in modo compungi mulierem volutpat.",
-      technologies: ["js", "html", "css"],
-      clients: ["Hulk", "Ant-man"],
-      startDate: "03-2014",
-      endDate: "03-2015"
+        "I was part of Frontend team. Great persons I gained a lot of experience working with them. Most of the time I was making contest pages, integrations with backend (django). Developing RWD in existing / new projects. Finding a solution for business problems f.e. limited page size or loading time. I've worked remotely occasionally.",
+      technologies: ["js", "html", "sass", "jquery", "react", "django"],
+      clients: [
+        "Winiary",
+        "Nowy Styl Group",
+        "Wedel",
+        "PFR",
+        "Prudential",
+        "Mazda",
+        "Tymbark",
+        "Kubuś",
+        "Shell",
+        "Tiger",
+        "Volkswagen",
+        "Bols"
+      ],
+      startDate: "10-2015",
+      endDate: "02-2018"
     },
     {
       name: "Red Dragon Media Sp. z o.o.",
-      title: "Frontend Ninja",
+      title: "Junior Frontend Developer",
       description:
-        "Volvitur ingreditur id ait mea vero cum autem quod ait Cumque ego illum vero cum unde beata. Commendavi si non dum est in. Dionysiadem tuos ratio puella ut casus, tunc lacrimas effunditis magister cives Tharsis. Puellae addita verbaque capellam sanctissima quid, apollinem existimas filiam rex cum autem quod tamen adnuente rediens eam est se in. Peracta licet ad nomine Maria non ait in modo compungi mulierem volutpat.",
-      technologies: ["js", "html", "css"],
+        "Cutting from project and coding page layout while maintaining certain standards. Implementing mobile versions to existing / new websites. Making animations, using a lot of js libraries for slides, making navigations etc.",
+      technologies: ["js", "html", "css", "sass", "jquery"],
       clients: ["Hulk", "Ant-man"],
       startDate: "02-2015",
       endDate: "10-2015"
     },
     {
-      name: "Lemon Sky J. Walter Thompson Poland",
-      title: "Junior Frontend Developer",
-      description:
-        "Volvitur ingreditur id ait mea vero cum autem quod ait Cumque ego illum vero cum unde beata. Commendavi si non dum est in. Dionysiadem tuos ratio puella ut casus, tunc lacrimas effunditis magister cives Tharsis. Puellae addita verbaque capellam sanctissima quid, apollinem existimas filiam rex cum autem quod tamen adnuente rediens eam est se in. Peracta licet ad nomine Maria non ait in modo compungi mulierem volutpat.",
-      technologies: ["js", "html", "css"],
-      clients: ["Hulk", "Ant-man"],
-      startDate: "10-2015",
-      endDate: "07-2017"
+      name: "WEBDEVPLUS",
+      title: "Freelance / Frontend",
+      description: "I was part of .",
+      technologies: ["js", "html", "css", "jquery", "bootstrap"],
+      clients: ["Internal"],
+      startDate: "03-2014",
+      endDate: "03-2015"
     },
     {
-      name: "Lemon Sky J. Walter Thompson Poland",
-      title: "Frontend Developer",
+      name: "Freelancer.com",
+      title: "Freelance / Frontend",
       description:
-        "Volvitur ingreditur id ait mea vero cum autem quod ait Cumque ego illum vero cum unde beata. Commendavi si non dum est in. Dionysiadem tuos ratio puella ut casus, tunc lacrimas effunditis magister cives Tharsis. Puellae addita verbaque capellam sanctissima quid, apollinem existimas filiam rex cum autem quod tamen adnuente rediens eam est se in. Peracta licet ad nomine Maria non ait in modo compungi mulierem volutpat.",
-      technologies: ["js", "html", "css"],
-      clients: ["Hulk", "Ant-man"],
-      startDate: "07-2017",
-      endDate: "02-2018"
+        'Implementation of the "Giggzu" website from scratch based on the Photoshop project. I"ve used basic frontend stack - HTML, CSS, Bootstrap 2.',
+      technologies: ["js", "html", "css", "bootstrap"],
+      clients: ["Giggzu owner"],
+      startDate: "10-2014",
+      endDate: "11-2014"
     },
     {
-      name: "panaceum.it",
-      title: "CEO",
-      description: "I've founded my own one person army company!",
-      technologies: ["js", "html", "css"],
-      clients: ["Hulk", "Ant-man"],
-      startDate: "03-2018",
-      endDate: ""
+      name: "Sygnity S.A.",
+      title: "Software Tester",
+      description:
+        "My second practice. I was responsible for manual and functional testing without software.",
+      technologies: [""],
+      clients: ["Internal"],
+      startDate: "12-2013",
+      endDate: "02-2014"
     },
     {
-      name: "Divante Sp. z o.o.",
-      title: "Frontend Developer",
+      name: "Next Computers s.c.",
+      title: "Computer Specialist",
       description:
-        "Volvitur ingreditur id ait mea vero cum autem quod ait Cumque ego illum vero cum unde beata. Commendavi si non dum est in. Dionysiadem tuos ratio puella ut casus, tunc lacrimas effunditis magister cives Tharsis. Puellae addita verbaque capellam sanctissima quid, apollinem existimas filiam rex cum autem quod tamen adnuente rediens eam est se in. Peracta licet ad nomine Maria non ait in modo compungi mulierem volutpat.",
-      technologies: ["js", "html", "css"],
-      clients: ["Hulk", "Ant-man"],
-      startDate: "03-2018",
-      endDate: ""
+        "My practice job on studies. Contact with the client, consulting, sales service, and accepting service orders.",
+      technologies: [],
+      clients: [],
+      startDate: "04-2013",
+      endDate: "07-2013"
     }
   ];
 </script>
@@ -98,6 +124,7 @@
     justify-content: center;
     width: 89vw;
   }
+
   .jobs-list {
     align-items: flex-start;
     display: flex;
@@ -111,7 +138,7 @@
     position: relative;
 
     &:after {
-      background: var(--persian-red);
+      background-color: var(--persian-red);
       bottom: 0;
       content: "";
       left: 50%;
@@ -127,11 +154,12 @@
       .content {
         border: 2px solid var(--maastricht-blue);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        position: relative;
-        width: calc(100% - 25px);
         box-sizing: border-box;
-        padding: 8px;
+        max-width: 1270px;
+        padding: 21px;
+        position: relative;
         transition: box-shadow var(--transition-time);
+        width: calc(100% - 25px);
 
         &:hover {
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
@@ -150,6 +178,18 @@
           right: -13px;
           top: 34px;
           width: 0;
+        }
+
+        .headline {
+          margin: 0;
+        }
+
+        .date {
+          color: var(--just-blue);
+        }
+
+        .clients {
+          font-style: italic;
         }
       }
 
@@ -188,10 +228,11 @@
 
         &:nth-of-type(even) {
           align-self: flex-start;
+
           .content {
             &:before {
               border-width: 13px 13px 0 13px;
-              border-color: var(--maastricht-blue) transparent transparent
+              border-color: var(--persian-red) transparent transparent
                 transparent;
               left: 50%;
               transform: translateX(-50%);
@@ -206,8 +247,7 @@
 
           &:before {
             border-width: 13px 13px 0 13px;
-            border-color: var(--maastricht-blue) transparent transparent
-              transparent;
+            border-color: var(--persian-red) transparent transparent transparent;
             left: 50%;
             transform: translateX(-50%);
             right: auto;
@@ -227,8 +267,10 @@
           <h2 class="headline">{job.name}</h2>
           <div class="description">
             <p>{job.title}</p>
-            <p>{job.description}</p>
-            <p>{job.clients}</p>
+            <p>
+              {@html job.description}
+            </p>
+            <p class="clients">Clients - {job.clients}</p>
             <p>{job.technologies}</p>
           </div>
           <div class="date">{job.startDate} - {job.endDate}</div>
