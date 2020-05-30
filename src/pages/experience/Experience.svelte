@@ -270,8 +270,8 @@
             <p>
               {@html job.description}
             </p>
-            <p class="clients">Clients - {job.clients}</p>
-            <p>{job.technologies}</p>
+            <p class="clients">Clients - {job.clients.join(', ')}</p>
+            <p>{job.technologies.join(', ')}</p>
           </div>
           <div class="date">{job.startDate} - {job.endDate}</div>
         </div>
