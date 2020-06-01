@@ -11,18 +11,36 @@
     justify-content: center;
     width: 89vw;
 
+    .headlines {
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        margin-left: 21px;
+      }
+    }
+
     .headline {
-      font-size: 130px;
+      font-size: 34px;
       margin: 0;
+
+      @media screen and (min-width: 768px) {
+        font-size: 130px;
+      }
 
       &.hello {
         align-items: flex-end;
         display: flex;
-        line-height: 90px;
+        line-height: 21px;
+
+        @media screen and (min-width: 768px) {
+          line-height: 89px;
+        }
       }
 
       & + .headline {
-        margin-top: 21px;
+        margin-top: 8px;
+
+        @media screen and (min-width: 768px) {
+          margin-top: 21px;
+        }
       }
     }
 
@@ -36,8 +54,15 @@
       background-color: var(--persian-red);
       color: transparent;
       display: inline-block;
-      height: 20px;
-      width: 20px;
+      height: 8px;
+      margin-left: 3px;
+      width: 8px;
+
+      @media screen and (min-width: 768px) {
+        height: 21px;
+        margin-left: 0;
+        width: 21px;
+      }
     }
   }
 </style>
