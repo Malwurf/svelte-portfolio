@@ -6,28 +6,60 @@
       description: " ",
       technologies: ["js", "html", "css", "magento", "jquery", "react"],
       clients: [
+        "Internal",
         "Enea",
         "Enea - Strefa Zakupów",
         "Open Loyalty",
         "Carrefour",
         "Energa",
-        "Internal",
         "Distripark"
       ],
       startDate: "03-2018",
       endDate: ""
     },
     {
+      name: "Usługi Transportowe K.P.",
+      title: "Freelance / Frontend",
+      description:
+        "Another successful SPA webpage and one of my best clients. Unfortunately, Mr. Krzysztof closed his firm but cooperation was great!",
+      technologies: ["html", "scss", "js"],
+      clients: ["Owner"],
+      startDate: "01-2019",
+      endDate: "05-2019"
+    },
+    {
+      name: "BusWojtex",
+      title: "Freelance / Frontend",
+      description:
+        "I did a SPA business-card webpage for a transport company to see how vue.js works - it's cool.",
+      technologies: ["vue.js", "sass", "html"],
+      clients: ["Owner"],
+      startDate: "10-2018",
+      endDate: "03-2019"
+    },
+    {
+      name: "Moni - Usługi Krawieckie",
+      title: "Freelance / Frontend",
+      description:
+        "I've designed a brand logo in Adobe Illustrator, created a simple SPA web page, started a fan page on Facebook",
+      technologies: ["illustrator", "html", "sass", "js"],
+      clients: ["Owner"],
+      startDate: "03-2018",
+      endDate: "08-2018"
+    },
+    {
       name: "panaceum.it",
       title: "CEO",
       description: "I've found my own (one-man army) firm!",
-      technologies: ["js", "html", "css"],
+      technologies: ["js", "svelte", "scss", "html"],
       clients: [
+        "Own Portfolio",
         "Divante",
         "Buswojtex",
         "Moni",
         "Posadzki Ostrowski",
-        "Piana Dachy"
+        "Piana Dachy",
+        "Washing Machine"
       ],
       startDate: "03-2018",
       endDate: ""
@@ -42,12 +74,31 @@
       endDate: "03-2018"
     },
     {
+      name: "Mobile Vikings",
+      title: "Freelance / Frontend",
+      description:
+        "As a subcontractor, I was responsible for implementing the new version of Mobile Vikings Webpage.",
+      technologies: ["jquery", "html", "sass", "git"],
+      clients: ["Washing Machine"],
+      startDate: "04-2017",
+      endDate: "08-2017"
+    },
+    {
       name: "Lemon Sky J. Walter Thompson Poland",
       title: "Frontend Developer",
       description:
         "I was part of Frontend team. Great persons I gained a lot of experience working with them. Most of the time I was making contest pages, integrations with backend (django). Developing RWD in existing / new projects. Finding a solution for business problems f.e. limited page size or loading time. I've worked remotely occasionally.",
-      technologies: ["js", "html", "sass", "jquery", "react", "django"],
+      technologies: [
+        "js",
+        "html",
+        "sass",
+        "jquery",
+        "react",
+        "django",
+        "emails"
+      ],
       clients: [
+        "Internal",
         "Winiary",
         "Nowy Styl Group",
         "Wedel",
@@ -70,7 +121,15 @@
       description:
         "Cutting from project and coding page layout while maintaining certain standards. Implementing mobile versions to existing / new websites. Making animations, using a lot of js libraries for slides, making navigations etc.",
       technologies: ["js", "html", "css", "sass", "jquery"],
-      clients: ["Hulk", "Ant-man"],
+      clients: [
+        "Tauron",
+        "Cooklet",
+        "Skyr",
+        "Kuchnia Marche",
+        "PZU",
+        "Danone",
+        "emails"
+      ],
       startDate: "02-2015",
       endDate: "10-2015"
     },
@@ -79,7 +138,7 @@
       title: "Freelance / Frontend",
       description: "I was part of .",
       technologies: ["js", "html", "css", "jquery", "bootstrap"],
-      clients: ["Internal"],
+      clients: ["Owner"],
       startDate: "03-2014",
       endDate: "03-2015"
     },
@@ -211,7 +270,7 @@
     }
   }
 
-  @media (max-width: 1023px) {
+  @media all and (max-width: 1023px) {
     .jobs-list {
       &:after {
         display: none;
@@ -228,16 +287,15 @@
 
         &:nth-of-type(even) {
           align-self: flex-start;
-
           .content {
             &:before {
-              border-width: 13px 13px 0 13px;
-              border-color: var(--persian-red) transparent transparent
+              border-width: 0 13px 13px 13px;
+              border-color: transparent transparent var(--persian-red)
                 transparent;
               left: 50%;
               transform: translateX(-50%);
               right: auto;
-              top: 100%;
+              top: -13px;
             }
           }
         }
@@ -246,12 +304,12 @@
           width: 100%;
 
           &:before {
-            border-width: 13px 13px 0 13px;
-            border-color: var(--persian-red) transparent transparent transparent;
+            border-width: 0 13px 13px 13px;
+            border-color: transparent transparent var(--persian-red) transparent;
             left: 50%;
             transform: translateX(-50%);
             right: auto;
-            top: 100%;
+            top: -13px;
           }
         }
       }
