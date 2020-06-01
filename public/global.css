@@ -25,6 +25,10 @@
 
   --transition-time: 0.34s;
   --longer-transition-time: 0.55s;
+
+  /* Sizes
+	   ========================================================================== */
+  --navigation-width: 70px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

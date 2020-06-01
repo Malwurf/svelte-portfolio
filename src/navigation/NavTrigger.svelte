@@ -6,23 +6,25 @@
   .wrapper {
     align-items: center;
     background-color: var(--maastricht-blue);
+    bottom: 0;
     box-shadow: 3px 0 5px rgba(0, 0, 0, 0.21);
     display: flex;
-    height: 100vh;
     justify-content: center;
-    position: relative;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: var(--navigation-width);
     z-index: 3;
-    width: 70px;
   }
   .trigger {
     align-items: center;
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    height: 70px;
+    height: var(--navigation-width);
     justify-content: center;
     margin: 0 auto;
-    width: 70px;
+    width: var(--navigation-width);
 
     input[type="checkbox"] {
       display: none;
@@ -121,7 +123,8 @@
       name="NavigationTrigger"
       id="NavigationTrigger"
       bind:checked={isChecked}
-      on:change />
+      on:change
+    />
     <span for="NavigationTrigger" />
     <span for="NavigationTrigger" />
     <span for="NavigationTrigger" />

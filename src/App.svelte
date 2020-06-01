@@ -9,6 +9,12 @@
   let renderComponent = StartPage;
 </script>
 
+<style lang="scss">
+  .content {
+    margin-left: var(--navigation-width);
+  }
+</style>
+
 <section>
   <Navigation
     on:AboutPage={() => {
