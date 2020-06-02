@@ -183,9 +183,7 @@
     list-style: none;
     margin-bottom: 55px;
     margin-top: 55px;
-    padding-bottom: 34px;
     padding-left: 0;
-    padding-top: 34px;
     position: relative;
 
     @media all and (min-width: 768px) {
@@ -208,7 +206,7 @@
     .item {
       margin-bottom: 0px;
       position: relative;
-      width: 89%;
+      width: 100%;
 
       & + .item {
         margin-top: 34px;

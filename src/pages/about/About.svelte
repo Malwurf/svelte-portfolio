@@ -49,17 +49,31 @@
     }
 
     .text {
-      font-size: 21px;
+      font-size: 13px;
+
+      @media screen and (min-width: 640px) {
+        font-size: 21px;
+      }
     }
 
     .icon {
       border-right: 2px solid var(--persian-red);
       display: block;
+      height: 100%;
       margin-right: 20px;
-      min-height: 55px;
-      min-width: 55px;
-      padding: 13px 21px;
+      max-height: 34px;
+      max-width: 34px;
+      padding-bottom: 8px;
+      padding-right: 13px;
+      padding-top: 8px;
       position: relative;
+      width: 100%;
+
+      @media screen and (min-width: 640px) {
+        max-height: 55px;
+        max-width: 55px;
+        padding: 13px 21px;
+      }
     }
   }
 
@@ -71,8 +85,13 @@
 
     &.blue {
       color: var(--just-blue);
+      font-size: 13px;
       margin-bottom: 13px;
       margin-top: 0;
+
+      @media screen and (min-width: 640px) {
+        font-size: 21px;
+      }
     }
 
     &.quotation {
@@ -82,7 +101,12 @@
     }
 
     &.main {
+      font-size: 21px;
       margin: 0;
+
+      @media screen and (min-width: 640px) {
+        font-size: 34px;
+      }
     }
   }
 </style>

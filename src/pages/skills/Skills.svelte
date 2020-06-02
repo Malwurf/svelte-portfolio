@@ -255,7 +255,8 @@
 
     @media all and (min-width: 1024px) {
       display: grid;
-      grid-gap: 10px;
+      grid-column-gap: 8px;
+      grid-row-gap: 13px;
       grid-template-columns: repeat(8, 89px);
       margin: auto;
     }
@@ -267,15 +268,19 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: 8px;
-      min-width: 377px;
+      min-width: 100%;
       padding: 8px;
       position: relative;
       width: calc(50% - 32px);
 
+      @media all and (min-width: 520px) {
+        min-width: auto;
+        width: calc(50% - 32px);
+      }
+
       @media all and (min-width: 1024px) {
         height: 89px;
-        min-width: 0;
+        min-width: auto;
         transition: color var(--transition-time),
           border-color var(--transition-time),
           background-color var(--transition-time);

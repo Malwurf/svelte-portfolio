@@ -13,6 +13,8 @@
   .content {
     margin-left: var(--navigation-width);
     overflow: hidden;
+    padding-bottom: 21px;
+    padding-top: 21px;
     width: 100%;
   }
 </style>

@@ -102,10 +102,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 34px;
+    padding: 21px;
     position: relative;
     width: 100%;
     z-index: 1;
+
+    @media all and (min-width: 640px) {
+      padding: 34px;
+    }
 
     .photo {
       border-radius: 50%;
@@ -147,12 +151,15 @@
     background-color: var(--maastricht-blue);
     box-sizing: border-box;
     padding: 13px;
-    position: absolute;
-    top: 100%;
     transform: translateY(-100%);
     transition: transform var(--transition-time),
       box-shadow var(--transition-time);
     width: 100%;
+
+    @media all and (min-width: 640px) {
+      position: absolute;
+      top: 100%;
+    }
 
     .link {
       color: var(--persian-red);
