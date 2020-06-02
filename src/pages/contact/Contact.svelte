@@ -29,16 +29,17 @@
         break;
 
       case "phone":
-        description =
-          "If you're developer, You know where to find it. If you're not... ask developer ;)";
+        description = `<p>If you're developer, You know where to find it.</p>
+          <p>If you're not... ask developer ;)</p>
+          <p>If you're on mobile device... just send me an email :)</p>`;
         console.log("Call me - +48 889 788 888");
         break;
 
       case "donate":
-        description = `Feel free to send me some donations! Your money will be happier with me!<br/>
-          Revolut - +48 889 788 888<br/>
-          BTC - 34Gk63x1d6QmLBXmsu4RsanvSXW8LxjzDC<br/>
-          ETH - 0x38F7a8C5a607415BFBDeD33C5b0927008465Ba70`;
+        description = `<p>Feel free to send me some donations! Your money will be happier with me!</p>
+          <p>Revolut - +48 889 788 888</p>
+          <p>BTC - 34Gk63x1d6QmLBXmsu4RsanvSXW8LxjzDC</p>
+          <p>ETH - 0x38F7a8C5a607415BFBDeD33C5b0927008465Ba70`;
         break;
 
       case "github":
@@ -155,6 +156,7 @@
     transition: transform var(--transition-time),
       box-shadow var(--transition-time);
     width: 100%;
+    word-wrap: break-word;
 
     @media all and (min-width: 640px) {
       position: absolute;

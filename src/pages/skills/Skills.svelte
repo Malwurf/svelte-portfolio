@@ -268,18 +268,21 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      margin-bottom: 21px;
+      margin-left: 8px;
+      margin-right: 8px;
       min-width: 100%;
       padding: 8px;
       position: relative;
-      width: calc(50% - 32px);
+      width: calc(50% - 16px);
 
       @media all and (min-width: 520px) {
         min-width: auto;
-        width: calc(50% - 32px);
       }
 
       @media all and (min-width: 1024px) {
         height: 89px;
+        margin: 0;
         min-width: auto;
         transition: color var(--transition-time),
           border-color var(--transition-time),
