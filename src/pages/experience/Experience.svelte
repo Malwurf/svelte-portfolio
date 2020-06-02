@@ -18,6 +18,15 @@
       endDate: ""
     },
     {
+      name: "Personal Trainer M.B.",
+      title: "Freelance / Graphic Designer",
+      description: "I've designed leaflets for Michał B. - personal trainer.",
+      technologies: ["Affinity Designer"],
+      clients: ["Owner"],
+      startDate: "01-2015",
+      endDate: "02-2015"
+    },
+    {
       name: "Usługi Transportowe K.P.",
       title: "Freelance / Frontend",
       description:
@@ -132,6 +141,16 @@
       ],
       startDate: "02-2015",
       endDate: "10-2015"
+    },
+    {
+      name: "WUL-KAM K.W.",
+      title: "Freelance / Graphic Designer",
+      description:
+        "I've designed visit cards for the best vulcanization firm near Legnica",
+      technologies: ["Illustrator", "Photoshop"],
+      clients: ["Owner"],
+      startDate: "01-2015",
+      endDate: "02-2015"
     },
     {
       name: "WEBDEVPLUS",
