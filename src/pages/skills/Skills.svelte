@@ -247,13 +247,18 @@
 
 <style lang="scss">
   .skillsList {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(8, 89px);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: auto;
     max-width: 987px;
     padding-left: 0;
+
+    @media all and (min-width: 1024px) {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(8, 89px);
+      margin: auto;
+    }
 
     .item {
       border: 2px solid var(--maastricht-blue);
@@ -261,32 +266,44 @@
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
-      height: 89px;
       justify-content: center;
       margin: 8px;
+      min-width: 377px;
       padding: 8px;
       position: relative;
-      transition: color var(--transition-time),
-        border-color var(--transition-time),
-        background-color var(--transition-time);
-      width: 89px;
+      width: calc(50% - 32px);
 
-      &:hover {
-        &:not(.spacer) {
-          background-color: var(--persian-red);
-          border-color: var(--persian-red);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
-            0 3px 6px rgba(0, 0, 0, 0.23);
-          color: var(--white);
-          .description {
-            display: block;
+      @media all and (min-width: 1024px) {
+        height: 89px;
+        min-width: 0;
+        transition: color var(--transition-time),
+          border-color var(--transition-time),
+          background-color var(--transition-time);
+        width: 89px;
+
+        &:hover {
+          &:not(.spacer) {
+            background-color: var(--persian-red);
+            border-color: var(--persian-red);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+              0 3px 6px rgba(0, 0, 0, 0.23);
+            color: var(--white);
+
+            .description {
+              display: block;
+            }
           }
         }
       }
 
       &.spacer {
-        border: none;
-        box-shadow: none;
+        display: none;
+
+        @media all and (min-width: 1024px) {
+          border: none;
+          box-shadow: none;
+          display: block;
+        }
       }
 
       .symbol {
@@ -298,17 +315,23 @@
       }
 
       .description {
-        background-color: var(--maastricht-blue);
         border-radius: 5px;
-        display: none;
         font-size: 13px;
-        left: 50%;
-        padding: 5px 8px;
-        position: absolute;
-        top: calc(100% + 0px);
-        transform: translateX(-50%);
-        width: 233px;
-        z-index: 1;
+        margin-top: 13px;
+
+        @media all and (min-width: 1024px) {
+          background-color: var(--maastricht-blue);
+          color: var(--white);
+          display: none;
+          left: 50%;
+          margin-top: 0;
+          padding: 5px 8px;
+          position: absolute;
+          top: calc(100% + 0px);
+          transform: translateX(-50%);
+          width: 233px;
+          z-index: 1;
+        }
       }
     }
   }
