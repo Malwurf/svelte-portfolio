@@ -176,16 +176,8 @@
 </script>
 
 <style lang="scss">
-  .container {
-    align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    width: 89vw;
-  }
-
   .jobs-list {
-    align-items: flex-start;
+    align-items: center;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -196,19 +188,39 @@
     padding-top: 34px;
     position: relative;
 
-    &:after {
-      background-color: var(--persian-red);
-      bottom: 0;
-      content: "";
-      left: 50%;
-      position: absolute;
-      top: 0;
-      transform: translateX(-50%);
-      width: 3px;
+    @media all and (min-width: 768px) {
+      align-items: flex-start;
+    }
+
+    @media all and (min-width: 768px) {
+      &:after {
+        background-color: var(--persian-red);
+        bottom: 0;
+        content: "";
+        left: 50%;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+        width: 3px;
+      }
     }
 
     .item {
-      width: 50%;
+      margin-bottom: 0px;
+      position: relative;
+      width: 89%;
+
+      & + .item {
+        margin-top: 34px;
+
+        @media all and (min-width: 768px) {
+          margin-top: 0;
+        }
+      }
+
+      @media all and (min-width: 768px) {
+        width: 50%;
+      }
 
       .content {
         border: 2px solid var(--maastricht-blue);
@@ -218,25 +230,39 @@
         padding: 21px;
         position: relative;
         transition: box-shadow var(--transition-time);
-        width: calc(100% - 25px);
+        width: 100%;
 
-        &:hover {
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
-            0 3px 6px rgba(0, 0, 0, 0.23);
+        @media all and (min-width: 768px) {
+          width: calc(100% - 25px);
+
+          &:hover {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+              0 3px 6px rgba(0, 0, 0, 0.23);
+          }
         }
 
         &:before {
-          border-color: transparent transparent transparent
-            var(--maastricht-blue);
+          border-width: 0 13px 13px 13px;
+          border-color: transparent transparent var(--persian-red) transparent;
+          left: 50%;
+          transform: translateX(-50%);
+          top: -13px;
           border-style: solid;
-          border-width: 13px 0 13px 13px;
           content: " ";
           display: block;
           height: 0;
           position: absolute;
-          right: -13px;
-          top: 34px;
           width: 0;
+
+          @media all and (min-width: 768px) {
+            border-color: transparent transparent transparent
+              var(--maastricht-blue);
+            border-width: 13px 0 13px 13px;
+            right: -13px;
+            top: 34px;
+            transform: none;
+            left: auto;
+          }
         }
 
         .headline {
@@ -253,63 +279,30 @@
       }
 
       &:nth-of-type(even) {
-        align-self: flex-end;
+        align-self: center;
         display: flex;
         justify-content: flex-end;
 
-        .content {
-          &:before {
-            border-color: transparent var(--maastricht-blue) transparent
-              transparent;
-            border-width: 13px 13px 13px 0;
-            left: -13px;
-            right: auto;
-          }
-        }
-      }
-    }
-  }
-
-  @media all and (max-width: 1023px) {
-    .jobs-list {
-      &:after {
-        display: none;
-      }
-
-      .item {
-        margin-bottom: 0px;
-        position: relative;
-        width: 89%;
-
-        & + .item {
-          margin-top: 34px;
-        }
-
-        &:nth-of-type(even) {
-          align-self: flex-start;
-          .content {
-            &:before {
-              border-width: 0 13px 13px 13px;
-              border-color: transparent transparent var(--persian-red)
-                transparent;
-              left: 50%;
-              transform: translateX(-50%);
-              right: auto;
-              top: -13px;
-            }
-          }
+        @media all and (min-width: 768px) {
+          align-self: flex-end;
         }
 
         .content {
-          width: 100%;
-
           &:before {
-            border-width: 0 13px 13px 13px;
             border-color: transparent transparent var(--persian-red) transparent;
+            border-width: 0 13px 13px 13px;
             left: 50%;
-            transform: translateX(-50%);
-            right: auto;
             top: -13px;
+            transform: translateX(-50%);
+
+            @media all and (min-width: 768px) {
+              border-color: transparent var(--maastricht-blue) transparent
+                transparent;
+              border-width: 13px 13px 13px 0;
+              left: -13px;
+              top: 34px;
+              transform: none;
+            }
           }
         }
       }

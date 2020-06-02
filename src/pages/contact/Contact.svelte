@@ -76,15 +76,6 @@
     fill: var(--persian-red);
   }
 
-  .container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    width: 89vw;
-  }
-
   .contact-card {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     position: relative;
@@ -92,11 +83,14 @@
     max-width: 610px;
     width: 100%;
 
-    &:hover {
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-
-      .contact-details.active {
+    @media all and (min-width: 1024px) {
+      &:hover {
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+        .contact-details.active {
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+            0 3px 6px rgba(0, 0, 0, 0.23);
+        }
       }
     }
   }

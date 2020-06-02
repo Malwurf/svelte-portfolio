@@ -246,14 +246,6 @@
 </script>
 
 <style lang="scss">
-  .container {
-    align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    width: 89vw;
-  }
-
   .skillsList {
     display: grid;
     grid-gap: 10px;

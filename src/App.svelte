@@ -12,6 +12,8 @@
 <style lang="scss">
   .content {
     margin-left: var(--navigation-width);
+    overflow: hidden;
+    width: 100%;
   }
 </style>
 

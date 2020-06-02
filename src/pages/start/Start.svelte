@@ -4,17 +4,9 @@
 </script>
 
 <style lang="scss">
-  .container {
-    align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    width: 89vw;
-
-    .headlines {
-      @media screen and (min-width: 768px) and (max-width: 1024px) {
-        margin-left: 21px;
-      }
+  .headlines {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      margin-left: 21px;
     }
 
     .headline {

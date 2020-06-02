@@ -22,28 +22,30 @@
 </script>
 
 <style lang="scss">
-  .container {
+  .about-list {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    width: 89vw;
-  }
-  .about-list {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
     max-width: 987px;
     padding-left: 0;
 
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+    }
+
     .item {
       align-items: center;
       display: flex;
       justify-content: flex-start;
       margin-bottom: 21px;
-      width: 50%;
+      width: 89%;
+
+      @media screen and (min-width: 1024px) {
+        width: 50%;
+      }
     }
 
     .text {
@@ -60,6 +62,7 @@
       position: relative;
     }
   }
+
   .headline {
     &.red {
       color: var(--persian-red);
