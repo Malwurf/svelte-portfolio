@@ -23,8 +23,8 @@
       description: "I've designed leaflets for Michał B. - personal trainer.",
       technologies: ["Affinity Designer"],
       clients: ["Owner"],
-      startDate: "01-2015",
-      endDate: "02-2015"
+      startDate: "03-2019",
+      endDate: "03-2019"
     },
     {
       name: "Usługi Transportowe K.P.",
