@@ -253,7 +253,7 @@
     max-width: 987px;
     padding-left: 0;
 
-    @media all and (min-width: 1024px) {
+    @media (hover: hover) and (pointer: fine) and (min-width: 1024px) {
       display: grid;
       grid-column-gap: 8px;
       grid-row-gap: 13px;
@@ -280,7 +280,7 @@
         min-width: auto;
       }
 
-      @media all and (min-width: 1024px) {
+      @media (hover: hover) and (pointer: fine) and (min-width: 1024px) {
         height: 89px;
         margin: 0;
         min-width: auto;
@@ -307,7 +307,7 @@
       &.spacer {
         display: none;
 
-        @media all and (min-width: 1024px) {
+        @media (hover: hover) and (pointer: fine) and (min-width: 1024px) {
           border: none;
           box-shadow: none;
           display: block;
@@ -327,7 +327,7 @@
         font-size: 13px;
         margin-top: 13px;
 
-        @media all and (min-width: 1024px) {
+        @media (hover: hover) and (pointer: fine) and (min-width: 1024px) {
           background-color: var(--maastricht-blue);
           color: var(--white);
           display: none;
