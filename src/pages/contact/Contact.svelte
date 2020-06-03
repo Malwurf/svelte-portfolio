@@ -74,7 +74,7 @@
   }
 
   div :global(button:active svg path, button:focus svg path) {
-    fill: var(--persian-red);
+    fill: var(--pegasus-red);
   }
 
   .contact-card {
@@ -114,7 +114,7 @@
 
     .photo {
       border-radius: 50%;
-      border: 2px solid var(--persian-red);
+      border: 2px solid var(--pegasus-red);
       margin-bottom: 34px;
 
       .image {
@@ -164,7 +164,7 @@
     }
 
     .link {
-      color: var(--persian-red);
+      color: var(--pegasus-red);
       text-decoration: none;
     }
 

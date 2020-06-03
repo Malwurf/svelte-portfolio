@@ -291,8 +291,8 @@
 
         &:hover {
           &:not(.spacer) {
-            background-color: var(--persian-red);
-            border-color: var(--persian-red);
+            background-color: var(--pegasus-red);
+            border-color: var(--pegasus-red);
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
               0 3px 6px rgba(0, 0, 0, 0.23);
             color: var(--white);

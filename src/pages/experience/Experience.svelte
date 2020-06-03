@@ -15,16 +15,18 @@
         "Distripark"
       ],
       startDate: "03-2018",
-      endDate: ""
+      endDate: "",
+      opinion: false
     },
     {
       name: "Personal Trainer M.B.",
       title: "Freelance / Graphic Designer",
       description: "I've designed leaflets for Michał B. - personal trainer.",
-      technologies: ["Affinity Designer"],
+      technologies: ["affinity designer"],
       clients: ["Owner"],
       startDate: "03-2019",
-      endDate: "03-2019"
+      endDate: "03-2019",
+      opinion: false
     },
     {
       name: "Usługi Transportowe K.P.",
@@ -34,7 +36,8 @@
       technologies: ["html", "scss", "js"],
       clients: ["Owner"],
       startDate: "01-2019",
-      endDate: "05-2019"
+      endDate: "05-2019",
+      opinion: false
     },
     {
       name: "BusWojtex",
@@ -44,7 +47,8 @@
       technologies: ["vue.js", "sass", "html"],
       clients: ["Owner"],
       startDate: "10-2018",
-      endDate: "03-2019"
+      endDate: "03-2019",
+      opinion: false
     },
     {
       name: "Moni - Usługi Krawieckie",
@@ -54,7 +58,8 @@
       technologies: ["illustrator", "html", "sass", "js"],
       clients: ["Owner"],
       startDate: "03-2018",
-      endDate: "08-2018"
+      endDate: "08-2018",
+      opinion: false
     },
     {
       name: "panaceum.it",
@@ -71,7 +76,8 @@
         "Washing Machine"
       ],
       startDate: "03-2018",
-      endDate: ""
+      endDate: "",
+      opinion: false
     },
     {
       name: "Stark Industries",
@@ -80,7 +86,8 @@
       technologies: ["AI"],
       clients: ["Avengers"],
       startDate: "01-2018",
-      endDate: "03-2018"
+      endDate: "03-2018",
+      opinion: false
     },
     {
       name: "Mobile Vikings",
@@ -90,7 +97,8 @@
       technologies: ["jquery", "html", "sass", "git"],
       clients: ["Washing Machine"],
       startDate: "04-2017",
-      endDate: "08-2017"
+      endDate: "08-2017",
+      opinion: false
     },
     {
       name: "Lemon Sky J. Walter Thompson Poland",
@@ -122,7 +130,8 @@
         "Bols"
       ],
       startDate: "10-2015",
-      endDate: "02-2018"
+      endDate: "02-2018",
+      opinion: true
     },
     {
       name: "Red Dragon Media Sp. z o.o.",
@@ -140,7 +149,8 @@
         "emails"
       ],
       startDate: "02-2015",
-      endDate: "10-2015"
+      endDate: "10-2015",
+      opinion: false
     },
     {
       name: "WUL-KAM K.W.",
@@ -150,7 +160,8 @@
       technologies: ["Illustrator", "Photoshop"],
       clients: ["Owner"],
       startDate: "01-2015",
-      endDate: "02-2015"
+      endDate: "02-2015",
+      opinion: false
     },
     {
       name: "WEBDEVPLUS",
@@ -159,7 +170,8 @@
       technologies: ["js", "html", "css", "jquery", "bootstrap"],
       clients: ["Owner"],
       startDate: "03-2014",
-      endDate: "03-2015"
+      endDate: "03-2015",
+      opinion: false
     },
     {
       name: "Freelancer.com",
@@ -169,7 +181,8 @@
       technologies: ["js", "html", "css", "bootstrap"],
       clients: ["Giggzu owner"],
       startDate: "10-2014",
-      endDate: "11-2014"
+      endDate: "11-2014",
+      opinion: false
     },
     {
       name: "Sygnity S.A.",
@@ -179,7 +192,8 @@
       technologies: [""],
       clients: ["Internal"],
       startDate: "12-2013",
-      endDate: "02-2014"
+      endDate: "02-2014",
+      opinion: false
     },
     {
       name: "Next Computers s.c.",
@@ -189,9 +203,15 @@
       technologies: [],
       clients: [],
       startDate: "04-2013",
-      endDate: "07-2013"
+      endDate: "07-2013",
+      opinion: false
     }
   ];
+
+  function opinionLink(name) {
+    let link = "opinions/" + name.toLowerCase().replace(/[\s\.]/g, "") + ".pdf";
+    return link;
+  }
 </script>
 
 <style lang="scss">
@@ -211,7 +231,7 @@
 
     @media all and (min-width: 768px) {
       &:after {
-        background-color: var(--persian-red);
+        background-color: var(--pegasus-red);
         bottom: 0;
         content: "";
         left: 50%;
@@ -260,7 +280,7 @@
 
         &:before {
           border-width: 0 13px 13px 13px;
-          border-color: transparent transparent var(--persian-red) transparent;
+          border-color: transparent transparent var(--pegasus-red) transparent;
           left: 50%;
           transform: translateX(-50%);
           top: -13px;
@@ -283,11 +303,45 @@
         }
 
         .headline {
+          color: var(--just-blue);
           margin: 0;
         }
 
+        p {
+          margin-top: 13px;
+          margin-bottom: 13px;
+        }
+
+        .description {
+          .job-title {
+            margin-top: 3px;
+          }
+
+          .job-description {
+            font-size: 18px;
+          }
+        }
+
+        .opinion {
+          color: var(--pegasus-red);
+          display: inline-block;
+          margin-top: 13px;
+          text-decoration: none;
+          transition: color var(--transition-time);
+          font-size: 18px;
+          font-weight: bolder;
+
+          @media all and (min-width: 768px) {
+            &:hover {
+              color: var(--maastricht-blue);
+            }
+          }
+        }
+
         .date {
-          color: var(--just-blue);
+          font-size: 14px;
+          font-weight: bolder;
+          margin-top: 5px;
         }
 
         .clients {
@@ -306,7 +360,7 @@
 
         .content {
           &:before {
-            border-color: transparent transparent var(--persian-red) transparent;
+            border-color: transparent transparent var(--pegasus-red) transparent;
             border-width: 0 13px 13px 13px;
             left: 50%;
             top: -13px;
@@ -334,14 +388,20 @@
         <div class="content">
           <h2 class="headline">{job.name}</h2>
           <div class="description">
-            <p>{job.title}</p>
-            <p>
+            <div class="job-title">{job.title}</div>
+            <p class="date">{job.startDate} - {job.endDate}</p>
+            <!-- <p class="job-title">{job.title}</p> -->
+            <p class="job-description">
               {@html job.description}
             </p>
             <p class="clients">Clients - {job.clients.join(', ')}</p>
             <p>{job.technologies.join(', ')}</p>
           </div>
-          <div class="date">{job.startDate} - {job.endDate}</div>
+          {#if job.opinion}
+            <a href={opinionLink(job.name)} target="_blank" class="opinion">
+              See opinion
+            </a>
+          {/if}
         </div>
       </li>
     {/each}

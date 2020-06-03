@@ -79,7 +79,7 @@
       width: 55px;
 
       &:hover {
-        border-color: var(--persian-red);
+        border-color: var(--pegasus-red);
       }
 
       &:first-of-type {

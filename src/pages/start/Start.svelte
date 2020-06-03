@@ -43,7 +43,7 @@
     }
 
     .square {
-      background-color: var(--persian-red);
+      background-color: var(--pegasus-red);
       color: transparent;
       display: inline-block;
       height: 8px;

@@ -57,7 +57,7 @@
     }
 
     .icon {
-      border-right: 2px solid var(--persian-red);
+      border-right: 2px solid var(--pegasus-red);
       display: block;
       height: 100%;
       margin-right: 20px;
@@ -79,7 +79,7 @@
 
   .headline {
     &.red {
-      color: var(--persian-red);
+      color: var(--pegasus-red);
       margin: 0;
     }
 
