@@ -114,6 +114,8 @@
   }
 </style>
 
+<h1 class="page-headline">About me in pill</h1>
+
 <div class="container">
   <h2 class="blue headline">Frontend Developer</h2>
   <h1 class="main headline">Przemysław Korościk</h1>

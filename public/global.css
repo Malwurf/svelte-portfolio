@@ -48,8 +48,25 @@ body {
   padding-right: 13px;
   width: calc(100% - 26px);
 }
+
 @media screen and (min-width: 1024px) {
   .container {
+    margin: 0 auto;
     width: calc(89vw - 26px);
+  }
+}
+
+.page-headline {
+  border-bottom: 2px solid var(--pegasus-red);
+  color: var(--maastricht-blue);
+  display: inline-block;
+  font-size: 28px;
+  margin-left: 3%;
+  padding-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-headline {
+    font-size: 34px;
   }
 }

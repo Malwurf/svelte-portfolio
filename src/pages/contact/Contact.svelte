@@ -178,6 +178,8 @@
   }
 </style>
 
+<h1 class="page-headline">Contact</h1>
+
 <div class="container">
   <section class="contact-card">
     <div class="contact-info">

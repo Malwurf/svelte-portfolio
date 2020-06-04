@@ -230,11 +230,21 @@
     }
 
     @media all and (min-width: 768px) {
+      &:before {
+        color: var(--pegasus-red);
+        content: "Future";
+        left: 50%;
+        position: absolute;
+        top: -30px;
+        transform: translateX(-50%);
+      }
+
       &:after {
         background-color: var(--pegasus-red);
         bottom: 0;
         content: "";
         left: 50%;
+        margin-top: -13px;
         position: absolute;
         top: 0;
         transform: translateX(-50%);
@@ -380,6 +390,8 @@
     }
   }
 </style>
+
+<h1 class="page-headline">Experience timeline</h1>
 
 <div class="container">
   <ul class="jobs-list">

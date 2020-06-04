@@ -345,6 +345,8 @@
   }
 </style>
 
+<h1 class="page-headline">My skills</h1>
+
 <div class="container">
   <ul class="skillsList">
     {#each skillsList as skill}
