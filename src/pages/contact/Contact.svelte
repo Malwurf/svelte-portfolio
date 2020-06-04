@@ -145,7 +145,7 @@
     width: 100%;
     word-wrap: break-word;
 
-    @media all and (min-width: 640px) {
+    @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
       position: absolute;
       top: 100%;
     }
