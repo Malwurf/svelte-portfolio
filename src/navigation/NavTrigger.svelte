@@ -3,19 +3,6 @@
 </script>
 
 <style lang="scss">
-  .wrapper {
-    align-items: center;
-    background-color: var(--maastricht-blue);
-    bottom: 0;
-    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.21);
-    display: flex;
-    justify-content: center;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: var(--navigation-width);
-    z-index: 3;
-  }
   .trigger {
     align-items: center;
     cursor: pointer;
@@ -116,15 +103,9 @@
   }
 </style>
 
-<div class="wrapper">
+<div>
   <label class="trigger">
-    <input
-      type="checkbox"
-      name="NavigationTrigger"
-      id="NavigationTrigger"
-      bind:checked={isChecked}
-      on:change
-    />
+    <input type="checkbox" bind:checked={isChecked} on:change />
     <span for="NavigationTrigger" />
     <span for="NavigationTrigger" />
     <span for="NavigationTrigger" />

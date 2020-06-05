@@ -27,7 +27,6 @@
     align-items: center;
     box-sizing: border-box;
     display: flex;
-    height: 100vh;
     transition: transform var(--transition-time);
     z-index: 2;
 

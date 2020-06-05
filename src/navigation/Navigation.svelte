@@ -1,12 +1,7 @@
-<style>
-  nav {
-    display: flex;
-  }
-</style>
-
 <script>
   import NavList from "./NavList.svelte";
   import NavTrigger from "./NavTrigger.svelte";
+  import DarkmodeTrigger from "./DarkmodeTrigger.svelte";
 
   let active = false;
   let ChoosenPage = "StartPage";
@@ -15,6 +10,23 @@
     active = !active;
   }
 </script>
+
+<style>
+  nav {
+    align-items: center;
+    background-color: var(--maastricht-blue);
+    bottom: 0;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.21);
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: var(--navigation-width);
+    z-index: 3;
+    flex-direction: column;
+  }
+</style>
 
 <nav>
   <NavTrigger on:change={handleTrigger} isChecked={active} />
@@ -27,4 +39,5 @@
     on:StartPage
     on:click={handleTrigger}
   />
+  <DarkmodeTrigger />
 </nav>
