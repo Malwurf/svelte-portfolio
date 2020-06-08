@@ -246,6 +246,14 @@
 </script>
 
 <style lang="scss">
+  :global(body.darkmode) {
+    .skillsList {
+      .item {
+        border-color: var(--just-white);
+      }
+    }
+  }
+
   .skillsList {
     display: flex;
     flex-wrap: wrap;
@@ -295,7 +303,7 @@
             border-color: var(--pegasus-red);
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
               0 3px 6px rgba(0, 0, 0, 0.23);
-            color: var(--white);
+            color: var(--just-white);
 
             .description {
               display: block;
@@ -329,7 +337,7 @@
 
         @media (hover: hover) and (pointer: fine) and (min-width: 1024px) {
           background-color: var(--maastricht-blue);
-          color: var(--white);
+          color: var(--just-white);
           display: none;
           left: 50%;
           margin-top: 0;

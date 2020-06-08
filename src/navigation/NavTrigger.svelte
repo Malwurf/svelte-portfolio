@@ -22,7 +22,7 @@
         transition: transform var(--transition-time);
 
         &::after {
-          background-color: var(--white);
+          background-color: var(--just-white);
           border-radius: 0 4px 4px 0;
           min-width: 40px;
         }
@@ -59,7 +59,7 @@
 
     span {
       align-items: center;
-      background-color: var(--bleachedsilk-white);
+      background-color: var(--just-white);
       display: flex;
       flex-direction: row;
       height: 4px;
@@ -70,7 +70,7 @@
       width: 10%;
 
       &::before {
-        background-color: var(--bleachedsilk-white);
+        background-color: var(--just-white);
         content: "";
         display: block;
         height: 4px;
@@ -80,7 +80,7 @@
       }
 
       &::after {
-        background-color: var(--bleachedsilk-white);
+        background-color: var(--just-white);
         content: "";
         display: block;
         height: 4px;

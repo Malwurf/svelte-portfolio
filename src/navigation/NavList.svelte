@@ -19,7 +19,7 @@
 
 <style lang="scss">
   div :global(li svg) {
-    fill: var(--white);
+    fill: var(--just-white);
     width: 21px;
   }
 
@@ -33,19 +33,19 @@
     &.active {
       .navbar-list .item {
         &:first-of-type {
-          transform: translateX(89px);
+          transform: translateX(165px);
         }
         &:nth-of-type(2) {
-          transform: translateX(102px);
+          transform: translateX(178px);
         }
         &:nth-of-type(3) {
-          transform: translateX(115px);
+          transform: translateX(181px);
         }
         &:nth-of-type(4) {
-          transform: translateX(102px);
+          transform: translateX(178px);
         }
         &:last-of-type {
-          transform: translateX(89px);
+          transform: translateX(165px);
         }
       }
     }
@@ -53,9 +53,12 @@
 
   .navbar-list {
     box-sizing: border-box;
+    left: calc(-1 * var(--navigation-width));
     list-style: none;
     padding-left: 0;
     position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
     width: var(--navigation-width);
     z-index: 2;
 
@@ -65,7 +68,7 @@
       border-radius: 50%;
       border: 3px solid transparent;
       box-sizing: border-box;
-      color: var(--bleachedsilk-white);
+      color: var(--just-white);
       cursor: pointer;
       display: flex;
       font-size: 1.2rem;

@@ -215,6 +215,32 @@
 </script>
 
 <style lang="scss">
+  :global(body.darkmode) {
+    .jobs-list {
+      .item {
+        .content {
+          border-color: var(--just-white);
+
+          &:before {
+            border-left-color: var(--just-white);
+          }
+
+          .opinion {
+            &:hover {
+              color: var(--just-blue);
+            }
+          }
+        }
+
+        &:nth-of-type(even) {
+          .content:before {
+            border-right-color: var(--just-white);
+          }
+        }
+      }
+    }
+  }
+
   .jobs-list {
     align-items: center;
     display: flex;
@@ -341,7 +367,7 @@
           font-size: 18px;
           font-weight: bolder;
 
-          @media all and (min-width: 768px) {
+          @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
             &:hover {
               color: var(--maastricht-blue);
             }

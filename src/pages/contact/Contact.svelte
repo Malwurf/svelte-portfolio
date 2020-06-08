@@ -64,18 +64,39 @@
 </script>
 
 <style lang="scss">
-  div :global(.dynamic.link) {
+  :global(.dynamic.link) {
     color: var(--pegasus-red);
     font-weight: bolder;
     text-decoration: none;
   }
 
-  div :global(.contact-details) {
-    color: var(--bleachedsilk-white);
+  :global(.contact-details) {
+    color: var(--just-white);
   }
 
-  div :global(button:active svg path, button:focus svg path) {
+  :global(button:active svg path, button:focus svg path) {
     fill: var(--pegasus-red);
+  }
+
+  :global(body.darkmode) {
+    .contact-card {
+      box-shadow: 0 -3px 6px rgba(217, 4, 4, 0.55),
+        0 3px 6px rgba(217, 4, 4, 0.89);
+
+      &:hover {
+        .contact-details.active {
+          box-shadow: 0 0 3px rgba(217, 4, 4, 0.55),
+            0 2px 9px rgba(217, 4, 4, 0.89);
+        }
+      }
+    }
+    .contact-info {
+      background-color: var(--just-black);
+    }
+
+    .contact-details.active {
+      box-shadow: 0 0 3px rgba(217, 4, 4, 0.55), 0 2px 9px rgba(217, 4, 4, 0.89);
+    }
   }
 
   .contact-card {
@@ -99,13 +120,14 @@
 
   .contact-info {
     align-items: center;
-    background-color: var(--white);
+    background-color: var(--just-white);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 21px;
     position: relative;
+    transition: background-color var(--transition-time);
     width: 100%;
     z-index: 1;
 

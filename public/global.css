@@ -8,13 +8,11 @@
   --pegasus-red: #d90404;
 
   --maastricht-blue: #011c40;
-  --feather-blue: #0d1a26;
-  --corbeau-blue: #0e1126;
   --just-blue: #4ecfff;
 
-  --bleachedsilk-white: #f2f2f2;
-  --sauvignon-white: #f2eae4;
-  --white: #fff;
+  --just-black: #000000;
+
+  --just-white: #fff;
 
   --brightlettuce-green: #87dc5a;
 
@@ -36,6 +34,17 @@ html {
 body {
   display: flex;
   font-family: "Roboto", sans-serif;
+  transition: all var(--transition-time);
+}
+
+body.darkmode {
+  background-color: var(--just-black);
+  color: var(--just-white);
+  fill: var(--just-white);
+}
+
+body.darkmode .page-headline {
+  color: var(--just-white);
 }
 
 .container {
