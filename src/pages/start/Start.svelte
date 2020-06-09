@@ -1,6 +1,25 @@
 <script>
   const whoAmI = "I am Przemek";
   const jobTitle = "< Call me Krecik />";
+  const welcomes = [
+    "Hello",
+    "Witaj",
+    "Ciao",
+    "Hallo",
+    "Hola",
+    "Yo",
+    "Ahoj",
+    "你好",
+    "Привет",
+    "Zdravo",
+    "Merhaba",
+    "Здравствуйте"
+  ];
+  let welcome = "Hello";
+
+  function randomWelcome() {
+    welcome = welcomes[Math.floor(Math.random() * welcomes.length)];
+  }
 </script>
 
 <style lang="scss">
@@ -62,8 +81,8 @@
 <div class="container">
   <div class="headlines">
     <h2 class="headline hello">
-      Hello
-      <span class="square">.</span>
+      {welcome}
+      <span class="square" on:click={randomWelcome}>.</span>
     </h2>
     <h2 class="headline">{whoAmI}</h2>
     <h3 class="subheadline">{jobTitle}</h3>
