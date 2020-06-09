@@ -1,4 +1,6 @@
 <script>
+  import { onMount } from "svelte";
+  import { changeMode } from "./darkmode/Darkmode.svelte";
   import AboutPage from "./pages/about/About.svelte";
   import ContactPage from "./pages/contact/Contact.svelte";
   import ExperiencePage from "./pages/experience/Experience.svelte";
@@ -7,6 +9,27 @@
   import StartPage from "./pages/start/Start.svelte";
 
   let renderComponent = StartPage;
+  let isDarkmode = false;
+
+  function listenModeChange() {
+    window.matchMedia("(prefers-color-scheme: light)").addListener(function() {
+      changeMode();
+      isDarkmode = !isDarkmode;
+    });
+  }
+
+  onMount(() => {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      changeMode();
+      listenModeChange();
+      isDarkmode = !isDarkmode;
+    } else {
+      listenModeChange();
+    }
+  });
 </script>
 
 <style lang="scss">
@@ -37,6 +60,7 @@
     on:ContactPage={() => {
       renderComponent = ContactPage;
     }}
+    {isDarkmode}
   />
 </section>
 

@@ -3,6 +3,8 @@
   import NavTrigger from "./NavTrigger.svelte";
   import DarkmodeTrigger from "./DarkmodeTrigger.svelte";
 
+  export let isDarkmode;
+
   let active = false;
   let ChoosenPage = "StartPage";
 
@@ -39,5 +41,5 @@
     on:StartPage
     on:click={handleTrigger}
   />
-  <DarkmodeTrigger />
+  <DarkmodeTrigger {isDarkmode} />
 </nav>
