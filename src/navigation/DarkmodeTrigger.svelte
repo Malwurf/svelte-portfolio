@@ -1,10 +1,8 @@
 <script>
-  import DarkmodeHead from "../darkmode/DarkmodeHead.svelte";
+  import { changeMode } from "../darkmode/Darkmode.svelte";
   import { sunIcon, moonIcon } from "../icons/Icons.svelte";
 
-  function changeMode() {
-    document.querySelector("body").classList.toggle("darkmode");
-  }
+  export let isDarkmode;
 </script>
 
 <style lang="scss">
@@ -61,7 +59,7 @@
 </style>
 
 <label class="switcher">
-  <input type="checkbox" on:change={changeMode} />
+  <input type="checkbox" on:change={changeMode} bind:checked={isDarkmode} />
   <span class="icon sun">
     {@html sunIcon}
   </span>

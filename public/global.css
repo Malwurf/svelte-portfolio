@@ -11,6 +11,7 @@
   --just-blue: #4ecfff;
 
   --just-black: #000000;
+  --almost-black: #1e2227;
 
   --just-white: #fff;
 
@@ -38,7 +39,7 @@ body {
 }
 
 body.darkmode {
-  background-color: var(--just-black);
+  background-color: var(--almost-black);
   color: var(--just-white);
   fill: var(--just-white);
 }

@@ -83,6 +83,7 @@
         }
       }
     }
+
     .contact-info {
       background-color: var(--just-black);
     }

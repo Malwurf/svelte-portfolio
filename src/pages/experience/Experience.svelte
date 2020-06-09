@@ -222,7 +222,9 @@
           border-color: var(--just-white);
 
           &:before {
-            border-left-color: var(--just-white);
+            @media all and (min-width: 768px) {
+              border-left-color: var(--just-white);
+            }
           }
 
           .opinion {
@@ -234,7 +236,9 @@
 
         &:nth-of-type(even) {
           .content:before {
-            border-right-color: var(--just-white);
+            @media all and (min-width: 768px) {
+              border-right-color: var(--just-white);
+            }
           }
         }
       }
