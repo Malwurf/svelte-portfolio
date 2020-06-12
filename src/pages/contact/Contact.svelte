@@ -85,7 +85,7 @@
     }
 
     .contact-info {
-      background-color: var(--just-black);
+      background-color: var(--almost-black);
     }
 
     .contact-details.active {
@@ -200,35 +200,35 @@
   <section class="contact-card">
     <div class="contact-info">
       <Selfie />
-      <div class="name">Przemysław Korościk</div>
+      <div class="name target">Przemysław Korościk</div>
 
       <ul class="icons-list">
-        <li class="item">
+        <li class="item target">
           <button on:click={() => showDescription('email')}>
             {@html emailIcon}
           </button>
         </li>
-        <li class="item">
+        <li class="item target">
           <button on:click={() => showDescription('phone')}>
             {@html smartphoneIcon}
           </button>
         </li>
-        <li class="item">
+        <li class="item target">
           <button on:click={() => showDescription('github')}>
             {@html githubIcon}
           </button>
         </li>
-        <li class="item">
+        <li class="item target">
           <button on:click={() => showDescription('linkedin')}>
             {@html linkedinIcon}
           </button>
         </li>
-        <li class="item">
+        <li class="item target">
           <button on:click={() => showDescription('messanger')}>
             {@html messangerIcon}
           </button>
         </li>
-        <li class="item">
+        <li class="item target">
           <button on:click={() => showDescription('donate')}>
             {@html bitcoinIcon}
           </button>

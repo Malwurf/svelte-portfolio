@@ -218,6 +218,8 @@
   :global(body.darkmode) {
     .jobs-list {
       .item {
+        background-color: var(--almost-black);
+
         .content {
           border-color: var(--just-white);
 
@@ -426,7 +428,7 @@
 <div class="container">
   <ul class="jobs-list">
     {#each jobsList as job}
-      <li class="item">
+      <li class="item target">
         <div class="content">
           <h2 class="headline">{job.name}</h2>
           <div class="description">

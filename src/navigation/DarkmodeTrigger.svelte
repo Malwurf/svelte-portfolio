@@ -1,8 +1,40 @@
 <script>
   import { changeMode } from "../darkmode/Darkmode.svelte";
   import { sunIcon, moonIcon } from "../icons/Icons.svelte";
+  import ImportLibs from "../snapeffect/importLibs.svelte";
 
   export let isDarkmode;
+
+  let counter = 0;
+  let loadLibs = false;
+
+  function count() {
+    counter += 1;
+    if (counter === 5) {
+      counter = 0;
+
+      setTimeout(function() {
+        const targets = document.querySelectorAll(".target");
+
+        targets.forEach(function($elm, index) {
+          if ($elm.disintegrated) {
+            return;
+          }
+
+          if (index % 2 === 0) {
+            $elm.disintegrated = true;
+            disintegrate($elm);
+          }
+        });
+      }, 987);
+    }
+  }
+
+  function inputChanged() {
+    changeMode();
+    count();
+    loadLibs = true;
+  }
 </script>
 
 <style lang="scss">
@@ -59,7 +91,7 @@
 </style>
 
 <label class="switcher">
-  <input type="checkbox" on:change={changeMode} bind:checked={isDarkmode} />
+  <input type="checkbox" on:change={inputChanged} bind:checked={isDarkmode} />
   <span class="icon sun">
     {@html sunIcon}
   </span>
@@ -68,3 +100,7 @@
     {@html moonIcon}
   </span>
 </label>
+
+{#if loadLibs}
+  <ImportLibs />
+{/if}

@@ -14,6 +14,10 @@
 </script>
 
 <style>
+  :global(body.darkmode nav) {
+    background-color: var(--almost-black);
+  }
+
   nav {
     align-items: center;
     background-color: var(--maastricht-blue);
