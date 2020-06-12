@@ -358,7 +358,7 @@
 <div class="container">
   <ul class="skillsList">
     {#each skillsList as skill}
-      <li class="{skill.category} item">
+      <li class="{skill.category == 'spacer' ? 'spacer' : 'target'} item">
         <span class="symbol">{skill.symbol}</span>
         <span class="name">{skill.name}</span>
         <span class="description">

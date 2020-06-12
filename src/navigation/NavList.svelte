@@ -19,6 +19,12 @@
     width: 21px;
   }
 
+  :global(body.darkmode) {
+    .navbar-list .item {
+      background-color: var(--almost-black);
+    }
+  }
+
   div {
     align-items: center;
     box-sizing: border-box;
@@ -62,7 +68,7 @@
       align-items: center;
       background-color: var(--maastricht-blue);
       border-radius: 50%;
-      border: 3px solid transparent;
+      border: 2px solid transparent;
       box-sizing: border-box;
       color: var(--just-white);
       cursor: pointer;

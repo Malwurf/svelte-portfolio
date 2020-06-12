@@ -104,11 +104,11 @@
 <h1 class="page-headline">About me in a pill</h1>
 
 <div class="container">
-  <h2 class="blue headline">Frontend Developer</h2>
+  <h2 class="blue headline target">Frontend Developer</h2>
   <h1 class="main headline">Przemysław Korościk</h1>
 
   <ul class="about-list">
-    <li class="item">
+    <li class="item target">
       <span class="icon">
         {@html worldIcon}
       </span>
@@ -116,7 +116,7 @@
         I live in small village (Wilczyce) near Wrocław in Poland.
       </p>
     </li>
-    <li class="item">
+    <li class="item target">
       <span class="icon">
         {@html directionIcon}
       </span>
@@ -125,7 +125,7 @@
         my job instantly.
       </p>
     </li>
-    <li class="item">
+    <li class="item target">
       <span class="icon">
         {@html familyIcon}
       </span>
@@ -134,7 +134,7 @@
         like spending time with them playing board games or eat.
       </p>
     </li>
-    <li class="item">
+    <li class="item target">
       <span class="icon">
         {@html ballIcon}
       </span>
@@ -143,7 +143,7 @@
         Turin.
       </p>
     </li>
-    <li class="item">
+    <li class="item target">
       <span class="icon">
         {@html avengersIcon}
       </span>
@@ -152,7 +152,7 @@
         is Avengers and Westworld of course.
       </p>
     </li>
-    <li class="item">
+    <li class="item target">
       <span class="icon">
         {@html eatingIcon}
       </span>
@@ -161,7 +161,7 @@
         cheese... and pizza... and ketchup... ;)
       </p>
     </li>
-    <li class="item">
+    <li class="item target">
       <span class="icon">
         {@html remoteIcon}
       </span>

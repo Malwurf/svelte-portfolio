@@ -11,7 +11,7 @@
   --just-blue: #4ecfff;
 
   --just-black: #000000;
-  --almost-black: #1e2227;
+  --almost-black: #1e1f26;
 
   --just-white: #fff;
 
@@ -35,11 +35,12 @@ html {
 body {
   display: flex;
   font-family: "Roboto", sans-serif;
-  transition: all var(--transition-time);
+  transition: background-color var(--transition-time),
+    fill var(--transition-time);
 }
 
 body.darkmode {
-  background-color: var(--almost-black);
+  background-color: #131417;
   color: var(--just-white);
   fill: var(--just-white);
 }
@@ -79,4 +80,19 @@ body.darkmode .page-headline {
   .page-headline {
     font-size: 34px;
   }
+}
+
+.thanos-container {
+  pointer-events: none;
+  position: absolute;
+}
+
+.thanos-container > canvas {
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  transform: rotate(0deg) translate(0px, 0px) rotate(0deg);
+  transition: transform 0.55s ease-out, opacity 0.55s ease-out;
+  will-change: transform;
 }
