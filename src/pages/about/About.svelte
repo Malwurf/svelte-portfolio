@@ -1,15 +1,6 @@
 <script>
   import PageHeadline from "../../pageheadline/PageHeadline.svelte";
-  import {
-    ballIcon,
-    worldIcon,
-    directionIcon,
-    avengersIcon,
-    tvIcon,
-    eatingIcon,
-    familyIcon,
-    remoteIcon
-  } from "../../icons/Icons.svelte";
+  import { aboutMe } from "./AboutDesc.svelte";
 
   const cite = '"Love You 3000"';
   const headline = "About me in a pill";
@@ -114,68 +105,14 @@
   <h1 class="main headline">{name}</h1>
 
   <ul class="about-list">
-    <li class="item target">
-      <span class="icon">
-        {@html worldIcon}
-      </span>
-      <p class="text">
-        I live in small village (Wilczyce) near Wrocław in Poland.
-      </p>
-    </li>
-    <li class="item target">
-      <span class="icon">
-        {@html directionIcon}
-      </span>
-      <p class="text">
-        I am self-taught. I chose frontend because I like to see the results of
-        my job instantly.
-      </p>
-    </li>
-    <li class="item target">
-      <span class="icon">
-        {@html familyIcon}
-      </span>
-      <p class="text">
-        I have a beautiful wife and daughter as well as several friends which I
-        like spending time with them playing board games or eat.
-      </p>
-    </li>
-    <li class="item target">
-      <span class="icon">
-        {@html ballIcon}
-      </span>
-      <p class="text">
-        Yup. I love to play & watch football. Of course, I support Juventus from
-        Turin.
-      </p>
-    </li>
-    <li class="item target">
-      <span class="icon">
-        {@html avengersIcon}
-      </span>
-      <p class="text">
-        In my free time, I like to watch sci-fi movies and TV series. Best ever
-        is Avengers and Westworld of course.
-      </p>
-    </li>
-    <li class="item target">
-      <span class="icon">
-        {@html eatingIcon}
-      </span>
-      <p class="text">
-        I like Italian food. Sometimes I cook dinners myself. I love meat... and
-        cheese... and pizza... and ketchup... ;)
-      </p>
-    </li>
-    <li class="item target">
-      <span class="icon">
-        {@html remoteIcon}
-      </span>
-      <p class="text">
-        I'm only interested in remote work job offers. If you have some just
-        send me an offer including salary range :)
-      </p>
-    </li>
+    {#each aboutMe as item}
+      <li class="item target">
+        <span class="icon">
+          {@html item.icon}
+        </span>
+        <p class="text">{item.description}</p>
+      </li>
+    {/each}
   </ul>
 
   <h2 class="red headline quotation">{cite}</h2>

@@ -1,12 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte";
-  import {
-    envelopeIcon,
-    resumeIcom,
-    homeIcon,
-    manIcon,
-    checklistIcon
-  } from "../icons/Icons.svelte";
+  import { navList } from "./PagesList.svelte";
 
   export let active;
 
@@ -107,50 +101,16 @@
 
 <div class:active>
   <ul class="navbar-list" on:click>
-    <li
-      class="item"
-      on:click={() => {
-        dispatch('StartPage');
-      }}
-      title="Homepage"
-    >
-      {@html homeIcon}
-    </li>
-    <li
-      class="item"
-      on:click={() => {
-        dispatch('AboutPage');
-      }}
-      title="About me"
-    >
-      {@html manIcon}
-    </li>
-    <li
-      class="item"
-      on:click={() => {
-        dispatch('SkillsPage');
-      }}
-      title="Skills"
-    >
-      {@html checklistIcon}
-    </li>
-    <li
-      class="item"
-      on:click={() => {
-        dispatch('ExperiencePage');
-      }}
-      title="Experience"
-    >
-      {@html resumeIcom}
-    </li>
-    <li
-      class="item"
-      on:click={() => {
-        dispatch('ContactPage');
-      }}
-      title="Contact"
-    >
-      {@html envelopeIcon}
-    </li>
+    {#each navList as item}
+      <li
+        class="item"
+        on:click={() => {
+          dispatch(item.name);
+        }}
+        title={item.title}
+      >
+        {@html item.icon}
+      </li>
+    {/each}
   </ul>
 </div>

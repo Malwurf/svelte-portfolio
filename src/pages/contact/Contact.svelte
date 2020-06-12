@@ -1,15 +1,7 @@
 <script>
   import PageHeadline from "../../pageheadline/PageHeadline.svelte";
   import Selfie from "./Selfie.svelte";
-  import {
-    bitcoinIcon,
-    emailIcon,
-    smartphoneIcon,
-    twitterIcon,
-    linkedinIcon,
-    messangerIcon,
-    githubIcon
-  } from "../../icons/Icons.svelte";
+  import { iconsList } from "./IconsList.svelte";
 
   const name = "Przemysław Korościk";
   const headline = "Contact";
@@ -203,40 +195,21 @@
 <div class="container">
   <section class="contact-card">
     <div class="contact-info">
+
       <Selfie />
+
       <div class="name target">{name}</div>
 
       <ul class="icons-list">
-        <li class="item target">
-          <button on:click={() => showDescription('email')}>
-            {@html emailIcon}
-          </button>
-        </li>
-        <li class="item target">
-          <button on:click={() => showDescription('phone')}>
-            {@html smartphoneIcon}
-          </button>
-        </li>
-        <li class="item target">
-          <button on:click={() => showDescription('github')}>
-            {@html githubIcon}
-          </button>
-        </li>
-        <li class="item target">
-          <button on:click={() => showDescription('linkedin')}>
-            {@html linkedinIcon}
-          </button>
-        </li>
-        <li class="item target">
-          <button on:click={() => showDescription('messanger')}>
-            {@html messangerIcon}
-          </button>
-        </li>
-        <li class="item target">
-          <button on:click={() => showDescription('donate')}>
-            {@html bitcoinIcon}
-          </button>
-        </li>
+
+        {#each iconsList as item}
+          <li class="item target">
+            <button on:click={() => showDescription(item.description)}>
+              {@html item.icon}
+            </button>
+          </li>
+        {/each}
+
       </ul>
     </div>
 
