@@ -1,4 +1,5 @@
 <script>
+  import PageHeadline from "../../pageheadline/PageHeadline.svelte";
   import {
     ballIcon,
     worldIcon,
@@ -9,6 +10,11 @@
     familyIcon,
     remoteIcon
   } from "../../icons/Icons.svelte";
+
+  const cite = '"Love You 3000"';
+  const headline = "About me in a pill";
+  const name = "Przemysław Korościk";
+  const title = "Frontend Developer";
 </script>
 
 <style lang="scss">
@@ -101,11 +107,11 @@
   }
 </style>
 
-<h1 class="page-headline">About me in a pill</h1>
+<PageHeadline {headline} />
 
 <div class="container">
-  <h2 class="blue headline target">Frontend Developer</h2>
-  <h1 class="main headline">Przemysław Korościk</h1>
+  <h2 class="blue headline target">{title}</h2>
+  <h1 class="main headline">{name}</h1>
 
   <ul class="about-list">
     <li class="item target">
@@ -172,5 +178,5 @@
     </li>
   </ul>
 
-  <h2 class="red headline quotation">"Love You 3000"</h2>
+  <h2 class="red headline quotation">{cite}</h2>
 </div>

@@ -1,4 +1,5 @@
 <script>
+  import PageHeadline from "../../pageheadline/PageHeadline.svelte";
   import Selfie from "./Selfie.svelte";
   import {
     bitcoinIcon,
@@ -9,6 +10,9 @@
     messangerIcon,
     githubIcon
   } from "../../icons/Icons.svelte";
+
+  const name = "Przemysław Korościk";
+  const headline = "Contact";
 
   let description = "";
   let showDescriptionBox = false;
@@ -194,13 +198,13 @@
   }
 </style>
 
-<h1 class="page-headline">Contact</h1>
+<PageHeadline {headline} />
 
 <div class="container">
   <section class="contact-card">
     <div class="contact-info">
       <Selfie />
-      <div class="name target">Przemysław Korościk</div>
+      <div class="name target">{name}</div>
 
       <ul class="icons-list">
         <li class="item target">
