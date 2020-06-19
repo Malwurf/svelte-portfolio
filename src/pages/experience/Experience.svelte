@@ -2,10 +2,10 @@
   import PageHeadline from "../../pageheadline/PageHeadline.svelte";
   import { jobsList } from "./JobsList.svelte";
 
-  function opinionLink(name) {
+  const opinionLink = name => {
     let link = "opinions/" + name.toLowerCase().replace(/[\s\.]/g, "") + ".pdf";
     return link;
-  }
+  };
 
   const headline = "Experience timeline";
 </script>

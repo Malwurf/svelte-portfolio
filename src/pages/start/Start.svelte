@@ -17,9 +17,9 @@
   ];
   let welcome = "Hello";
 
-  function randomWelcome() {
+  const randomWelcome = () => {
     welcome = welcomes[Math.floor(Math.random() * welcomes.length)];
-  }
+  };
 </script>
 
 <style lang="scss">

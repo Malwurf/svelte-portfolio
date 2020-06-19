@@ -8,15 +8,15 @@
   let counter = 0;
   let loadLibs = false;
 
-  function count() {
+  const count = () => {
     counter += 1;
     if (counter === 5) {
       counter = 0;
 
-      setTimeout(function() {
+      setTimeout(() => {
         const targets = document.querySelectorAll(".target");
 
-        targets.forEach(function($elm, index) {
+        targets.forEach(($elm, index) => {
           if ($elm.disintegrated) {
             return;
           }
@@ -28,13 +28,13 @@
         });
       }, 987);
     }
-  }
+  };
 
-  function inputChanged() {
+  const inputChanged = () => {
     changeMode();
     count();
     loadLibs = true;
-  }
+  };
 </script>
 
 <style lang="scss">

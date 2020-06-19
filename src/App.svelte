@@ -11,12 +11,12 @@
   let renderComponent = StartPage;
   let isDarkmode = false;
 
-  function listenModeChange() {
-    window.matchMedia("(prefers-color-scheme: light)").addListener(function() {
+  const listenModeChange = () => {
+    window.matchMedia("(prefers-color-scheme: light)").addListener(() => {
       changeMode();
       isDarkmode = !isDarkmode;
     });
-  }
+  };
 
   onMount(() => {
     if (

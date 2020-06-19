@@ -8,9 +8,9 @@
   let active = false;
   let ChoosenPage = "StartPage";
 
-  function handleTrigger() {
+  const handleTrigger = () => {
     active = !active;
-  }
+  };
 </script>
 
 <style>

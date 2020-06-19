@@ -9,7 +9,7 @@
   let description = "";
   let showDescriptionBox = false;
 
-  function showDescription(buttonName) {
+  const showDescription = buttonName => {
     showDescriptionBox = true;
 
     switch (buttonName) {
@@ -49,7 +49,7 @@
       default:
         "";
     }
-  }
+  };
 </script>
 
 <style lang="scss">

@@ -1,5 +1,5 @@
 <script context="module">
-  export function changeMode() {
+  export const changeMode = () => {
     document.querySelector("body").classList.toggle("darkmode");
-  }
+  };
 </script>
