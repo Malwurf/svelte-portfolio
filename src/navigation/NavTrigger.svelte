@@ -2,6 +2,15 @@
   export let isChecked;
 </script>
 
+<div>
+  <label class="trigger">
+    <input type="checkbox" bind:checked={isChecked} on:change />
+    <span for="NavigationTrigger" />
+    <span for="NavigationTrigger" />
+    <span for="NavigationTrigger" />
+  </label>
+</div>
+
 <style lang="scss">
   .trigger {
     align-items: center;
@@ -102,12 +111,3 @@
     }
   }
 </style>
-
-<div>
-  <label class="trigger">
-    <input type="checkbox" bind:checked={isChecked} on:change />
-    <span for="NavigationTrigger" />
-    <span for="NavigationTrigger" />
-    <span for="NavigationTrigger" />
-  </label>
-</div>

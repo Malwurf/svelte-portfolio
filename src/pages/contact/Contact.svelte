@@ -9,7 +9,7 @@
   let description = "";
   let showDescriptionBox = false;
 
-  const showDescription = buttonName => {
+  const showDescription = (buttonName) => {
     showDescriptionBox = true;
 
     switch (buttonName) {
@@ -51,6 +51,38 @@
     }
   };
 </script>
+
+<PageHeadline {headline} />
+
+<div class="container">
+  <section class="contact-card">
+    <div class="contact-info">
+
+      <Selfie />
+
+      <div class="name target">{name}</div>
+
+      <ul class="icons-list">
+
+        {#each iconsList as item}
+          <li class="item target">
+            <button on:click={() => showDescription(item.description)}>
+              {@html item.icon}
+            </button>
+          </li>
+        {/each}
+
+      </ul>
+    </div>
+
+    <div class="contact-details" class:active={showDescriptionBox}>
+      <p>
+        {@html description}
+      </p>
+    </div>
+  </section>
+
+</div>
 
 <style lang="scss">
   :global(.dynamic.link) {
@@ -138,12 +170,6 @@
       max-width: 233px;
       padding-left: 0;
       width: 100%;
-
-      .link {
-        display: block;
-        height: 34px;
-        width: 34px;
-      }
     }
   }
 
@@ -160,11 +186,6 @@
     @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
       position: absolute;
       top: 100%;
-    }
-
-    .link {
-      color: var(--pegasus-red);
-      text-decoration: none;
     }
 
     &.active {
@@ -189,35 +210,3 @@
     }
   }
 </style>
-
-<PageHeadline {headline} />
-
-<div class="container">
-  <section class="contact-card">
-    <div class="contact-info">
-
-      <Selfie />
-
-      <div class="name target">{name}</div>
-
-      <ul class="icons-list">
-
-        {#each iconsList as item}
-          <li class="item target">
-            <button on:click={() => showDescription(item.description)}>
-              {@html item.icon}
-            </button>
-          </li>
-        {/each}
-
-      </ul>
-    </div>
-
-    <div class="contact-details" class:active={showDescriptionBox}>
-      <p>
-        {@html description}
-      </p>
-    </div>
-  </section>
-
-</div>

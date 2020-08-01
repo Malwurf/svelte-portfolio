@@ -13,7 +13,7 @@
     "Привет",
     "Zdravo",
     "Merhaba",
-    "Здравствуйте"
+    "Здравствуйте",
   ];
   let welcome = "Hello";
 
@@ -21,6 +21,17 @@
     welcome = welcomes[Math.floor(Math.random() * welcomes.length)];
   };
 </script>
+
+<div class="container">
+  <div class="headlines">
+    <h2 class="headline hello target">
+      {welcome}
+      <span class="square" on:click={randomWelcome}>.</span>
+    </h2>
+    <h2 class="headline target">{whoAmI}</h2>
+    <h3 class="subheadline target">{jobTitle}</h3>
+  </div>
+</div>
 
 <style lang="scss">
   .headlines {
@@ -77,14 +88,3 @@
     }
   }
 </style>
-
-<div class="container">
-  <div class="headlines">
-    <h2 class="headline hello target">
-      {welcome}
-      <span class="square" on:click={randomWelcome}>.</span>
-    </h2>
-    <h2 class="headline target">{whoAmI}</h2>
-    <h3 class="subheadline target">{jobTitle}</h3>
-  </div>
-</div>

@@ -37,6 +37,21 @@
   };
 </script>
 
+<label class="switcher">
+  <input type="checkbox" on:change={inputChanged} bind:checked={isDarkmode} />
+  <span class="icon sun">
+    {@html sunIcon}
+  </span>
+
+  <span class="icon moon">
+    {@html moonIcon}
+  </span>
+</label>
+
+{#if loadLibs}
+  <ImportLibs />
+{/if}
+
 <style lang="scss">
   :global(body.darkmode .switcher svg path) {
     fill: var(--just-black);
@@ -89,18 +104,3 @@
     }
   }
 </style>
-
-<label class="switcher">
-  <input type="checkbox" on:change={inputChanged} bind:checked={isDarkmode} />
-  <span class="icon sun">
-    {@html sunIcon}
-  </span>
-
-  <span class="icon moon">
-    {@html moonIcon}
-  </span>
-</label>
-
-{#if loadLibs}
-  <ImportLibs />
-{/if}

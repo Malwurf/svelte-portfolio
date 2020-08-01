@@ -2,13 +2,43 @@
   import PageHeadline from "../../pageheadline/PageHeadline.svelte";
   import { jobsList } from "./JobsList.svelte";
 
-  const opinionLink = name => {
+  const opinionLink = (name) => {
     let link = "opinions/" + name.toLowerCase().replace(/[\s\.]/g, "") + ".pdf";
     return link;
   };
 
   const headline = "Experience timeline";
 </script>
+
+<PageHeadline {headline} />
+
+<div class="container">
+  <ul class="jobs-list">
+
+    {#each jobsList as job}
+      <li class="item target">
+        <div class="content">
+          <h2 class="headline">{job.name}</h2>
+
+          <div class="description">
+            <div class="job-title">{job.title}</div>
+            <p class="date">{job.startDate} - {job.endDate}</p>
+            <p class="job-description">{job.description}</p>
+            <p class="clients">Clients - {job.clients.join(', ')}</p>
+            <p>{job.technologies.join(', ')}</p>
+          </div>
+
+          {#if job.opinion}
+            <a href={opinionLink(job.name)} target="_blank" class="opinion">
+              See opinion
+            </a>
+          {/if}
+
+        </div>
+      </li>
+    {/each}
+  </ul>
+</div>
 
 <style lang="scss">
   :global(body.darkmode) {
@@ -218,33 +248,3 @@
     }
   }
 </style>
-
-<PageHeadline {headline} />
-
-<div class="container">
-  <ul class="jobs-list">
-
-    {#each jobsList as job}
-      <li class="item target">
-        <div class="content">
-          <h2 class="headline">{job.name}</h2>
-
-          <div class="description">
-            <div class="job-title">{job.title}</div>
-            <p class="date">{job.startDate} - {job.endDate}</p>
-            <p class="job-description">{job.description}</p>
-            <p class="clients">Clients - {job.clients.join(', ')}</p>
-            <p>{job.technologies.join(', ')}</p>
-          </div>
-
-          {#if job.opinion}
-            <a href={opinionLink(job.name)} target="_blank" class="opinion">
-              See opinion
-            </a>
-          {/if}
-
-        </div>
-      </li>
-    {/each}
-  </ul>
-</div>

@@ -7,6 +7,22 @@
   const dispatch = createEventDispatcher();
 </script>
 
+<div class:active>
+  <ul class="navbar-list" on:click>
+    {#each navList as item}
+      <li
+        class="item"
+        on:click={() => {
+          dispatch(item.name);
+        }}
+        title={item.title}
+      >
+        {@html item.icon}
+      </li>
+    {/each}
+  </ul>
+</div>
+
 <style lang="scss">
   div :global(li svg) {
     fill: var(--just-white);
@@ -98,19 +114,3 @@
     }
   }
 </style>
-
-<div class:active>
-  <ul class="navbar-list" on:click>
-    {#each navList as item}
-      <li
-        class="item"
-        on:click={() => {
-          dispatch(item.name);
-        }}
-        title={item.title}
-      >
-        {@html item.icon}
-      </li>
-    {/each}
-  </ul>
-</div>

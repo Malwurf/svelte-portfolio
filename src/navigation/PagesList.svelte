@@ -3,28 +3,28 @@
     {
       name: "StartPage",
       title: "Homepage",
-      icon: homeIcon
+      icon: homeIcon,
     },
     {
       name: "AboutPage",
       title: "About me",
-      icon: manIcon
+      icon: manIcon,
     },
     {
       name: "SkillsPage",
       title: "Skills",
-      icon: checklistIcon
+      icon: checklistIcon,
     },
     {
       name: "ExperiencePage",
       title: "Experience",
-      icon: resumeIcom
+      icon: resumeIcom,
     },
     {
       name: "ContactPage",
       title: "Contact",
-      icon: envelopeIcon
-    }
+      icon: envelopeIcon,
+    },
   ];
 </script>
 
@@ -34,6 +34,6 @@
     resumeIcom,
     homeIcon,
     manIcon,
-    checklistIcon
+    checklistIcon,
   } from "../icons/Icons.svelte";
 </script>

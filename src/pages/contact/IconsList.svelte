@@ -2,28 +2,28 @@
   export const iconsList = [
     {
       description: "email",
-      icon: emailIcon
+      icon: emailIcon,
     },
     {
       description: "phone",
-      icon: phoneIcon
+      icon: phoneIcon,
     },
     {
       description: "github",
-      icon: githubIcon
+      icon: githubIcon,
     },
     {
       description: "linkedin",
-      icon: linkedinIcon
+      icon: linkedinIcon,
     },
     {
       description: "messanger",
-      icon: messangerIcon
+      icon: messangerIcon,
     },
     {
       description: "donate",
-      icon: bitcoinIcon
-    }
+      icon: bitcoinIcon,
+    },
   ];
 </script>
 
@@ -32,9 +32,8 @@
     bitcoinIcon,
     emailIcon,
     phoneIcon,
-    twitterIcon,
     linkedinIcon,
     messangerIcon,
-    githubIcon
+    githubIcon,
   } from "../../icons/Icons.svelte";
 </script>

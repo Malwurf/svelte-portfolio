@@ -6,12 +6,25 @@
   export let isDarkmode;
 
   let active = false;
-  let ChoosenPage = "StartPage";
 
   const handleTrigger = () => {
     active = !active;
   };
 </script>
+
+<nav>
+  <NavTrigger on:change={handleTrigger} isChecked={active} />
+  <NavList
+    {active}
+    on:AboutPage
+    on:ContactPage
+    on:ExperiencePage
+    on:SkillsPage
+    on:StartPage
+    on:click={handleTrigger}
+  />
+  <DarkmodeTrigger {isDarkmode} />
+</nav>
 
 <style>
   :global(body.darkmode nav) {
@@ -33,17 +46,3 @@
     flex-direction: column;
   }
 </style>
-
-<nav>
-  <NavTrigger on:change={handleTrigger} isChecked={active} />
-  <NavList
-    {active}
-    on:AboutPage
-    on:ContactPage
-    on:ExperiencePage
-    on:SkillsPage
-    on:StartPage
-    on:click={handleTrigger}
-  />
-  <DarkmodeTrigger {isDarkmode} />
-</nav>

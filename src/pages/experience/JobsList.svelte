@@ -12,11 +12,11 @@
         "Open Loyalty",
         "Carrefour",
         "Energa",
-        "Distripark"
+        "Distripark",
       ],
       startDate: "03-2018",
       endDate: "",
-      opinion: false
+      opinion: false,
     },
     {
       name: "Personal Trainer M.B.",
@@ -26,7 +26,7 @@
       clients: ["Owner"],
       startDate: "03-2019",
       endDate: "03-2019",
-      opinion: false
+      opinion: false,
     },
     {
       name: "Usługi Transportowe K.P.",
@@ -37,7 +37,7 @@
       clients: ["Owner"],
       startDate: "01-2019",
       endDate: "05-2019",
-      opinion: false
+      opinion: false,
     },
     {
       name: "BusWojtex",
@@ -48,7 +48,7 @@
       clients: ["Owner"],
       startDate: "10-2018",
       endDate: "03-2019",
-      opinion: false
+      opinion: false,
     },
     {
       name: "Moni - Usługi Krawieckie",
@@ -59,7 +59,7 @@
       clients: ["Owner"],
       startDate: "03-2018",
       endDate: "08-2018",
-      opinion: false
+      opinion: false,
     },
     {
       name: "panaceum.it",
@@ -73,11 +73,11 @@
         "Moni",
         "Posadzki Ostrowski",
         "Piana Dachy",
-        "Washing Machine"
+        "Washing Machine",
       ],
       startDate: "03-2018",
       endDate: "",
-      opinion: false
+      opinion: false,
     },
     {
       name: "Stark Industries",
@@ -87,7 +87,7 @@
       clients: ["Avengers"],
       startDate: "01-2018",
       endDate: "03-2018",
-      opinion: false
+      opinion: false,
     },
     {
       name: "Mobile Vikings",
@@ -98,7 +98,7 @@
       clients: ["Washing Machine"],
       startDate: "04-2017",
       endDate: "08-2017",
-      opinion: false
+      opinion: false,
     },
     {
       name: "Lemon Sky J. Walter Thompson Poland",
@@ -112,7 +112,7 @@
         "jquery",
         "react",
         "django",
-        "emails"
+        "emails",
       ],
       clients: [
         "Internal",
@@ -127,11 +127,11 @@
         "Shell",
         "Tiger",
         "Volkswagen",
-        "Bols"
+        "Bols",
       ],
       startDate: "10-2015",
       endDate: "02-2018",
-      opinion: true
+      opinion: true,
     },
     {
       name: "Red Dragon Media Sp. z o.o.",
@@ -146,11 +146,11 @@
         "Kuchnia Marche",
         "PZU",
         "Danone",
-        "emails"
+        "emails",
       ],
       startDate: "02-2015",
       endDate: "10-2015",
-      opinion: false
+      opinion: false,
     },
     {
       name: "WUL-KAM K.W.",
@@ -161,7 +161,7 @@
       clients: ["Owner"],
       startDate: "01-2015",
       endDate: "02-2015",
-      opinion: false
+      opinion: false,
     },
     {
       name: "WEBDEVPLUS",
@@ -171,7 +171,7 @@
       clients: ["Owner"],
       startDate: "03-2014",
       endDate: "03-2015",
-      opinion: false
+      opinion: false,
     },
     {
       name: "Freelancer.com",
@@ -182,7 +182,7 @@
       clients: ["Giggzu owner"],
       startDate: "10-2014",
       endDate: "11-2014",
-      opinion: false
+      opinion: false,
     },
     {
       name: "Sygnity S.A.",
@@ -193,7 +193,7 @@
       clients: ["Internal"],
       startDate: "12-2013",
       endDate: "02-2014",
-      opinion: false
+      opinion: false,
     },
     {
       name: "Next Computers s.c.",
@@ -204,7 +204,7 @@
       clients: [],
       startDate: "04-2013",
       endDate: "07-2013",
-      opinion: false
-    }
+      opinion: false,
+    },
   ];
 </script>

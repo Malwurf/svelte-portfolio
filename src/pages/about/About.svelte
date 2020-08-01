@@ -8,6 +8,26 @@
   const title = "Frontend Developer";
 </script>
 
+<PageHeadline {headline} />
+
+<div class="container">
+  <h2 class="blue headline target">{title}</h2>
+  <h1 class="main headline">{name}</h1>
+
+  <ul class="about-list">
+    {#each aboutMe as item}
+      <li class="item target">
+        <span class="icon">
+          {@html item.icon}
+        </span>
+        <p class="text">{item.description}</p>
+      </li>
+    {/each}
+  </ul>
+
+  <h2 class="red headline quotation">{cite}</h2>
+</div>
+
 <style lang="scss">
   .about-list {
     align-items: center;
@@ -97,23 +117,3 @@
     }
   }
 </style>
-
-<PageHeadline {headline} />
-
-<div class="container">
-  <h2 class="blue headline target">{title}</h2>
-  <h1 class="main headline">{name}</h1>
-
-  <ul class="about-list">
-    {#each aboutMe as item}
-      <li class="item target">
-        <span class="icon">
-          {@html item.icon}
-        </span>
-        <p class="text">{item.description}</p>
-      </li>
-    {/each}
-  </ul>
-
-  <h2 class="red headline quotation">{cite}</h2>
-</div>

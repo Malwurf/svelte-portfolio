@@ -32,17 +32,6 @@
   });
 </script>
 
-<style lang="scss">
-  .content {
-    box-sizing: border-box;
-    margin-left: var(--navigation-width);
-    min-height: 100vh;
-    padding-bottom: 21px;
-    padding-top: 21px;
-    width: 100%;
-  }
-</style>
-
 <section>
   <Navigation
     on:AboutPage={() => {
@@ -67,3 +56,14 @@
 <section class="content">
   <svelte:component this={renderComponent} />
 </section>
+
+<style lang="scss">
+  .content {
+    box-sizing: border-box;
+    margin-left: var(--navigation-width);
+    min-height: 100vh;
+    padding-bottom: 21px;
+    padding-top: 21px;
+    width: 100%;
+  }
+</style>
