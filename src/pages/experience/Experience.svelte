@@ -23,7 +23,7 @@
           <div class="description">
             <div class="job-title">{job.title}</div>
             <p class="date">{job.startDate} - {job.endDate}</p>
-            <p class="job-description">{job.description}</p>
+            <p class="job-description">{@html job.description}</p>
             <p class="clients">Clients - {job.clients.join(', ')}</p>
             <p>{job.technologies.join(', ')}</p>
           </div>

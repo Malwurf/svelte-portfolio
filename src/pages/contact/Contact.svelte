@@ -28,7 +28,7 @@
       case "donate":
         description = `<p>Feel free to send me some donations! Your money will be happier with me!</p>
           <p>Revolut - +48 889 788 888</p>
-          <p>BTC - 34Gk63x1d6QmLBXmsu4RsanvSXW8LxjzDC</p>
+          <p>BTC - 3CUBsBqwhyFeq7DJQZUX7CHrtiMQQy4Wca</p>
           <p>ETH - 0x38F7a8C5a607415BFBDeD33C5b0927008465Ba70`;
         break;
 

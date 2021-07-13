@@ -3,8 +3,23 @@
     {
       name: "Divante Sp. z o.o.",
       title: "Frontend Developer",
-      description: " ",
-      technologies: ["js", "html", "css", "magento", "jquery", "react"],
+      description:
+        `Developer tasks:<br/>
+        - Magento (Frontend part development) <br/>
+        - Shopware (Frontend part development) <br/>
+        - Shopware-PWA (I was a part of the core team) <br/>
+        - Other frontend tasks <br/>
+
+        <br/><br/>
+
+        Leader tasks:<br/>
+        - Feedbacks for Frontend Devs <br/>
+        - Help developers with everyday problems (communication, hardware/software etc.) <br/>
+        - Project valuations <br/>
+        - Job interviews conduction <br/>
+        - New persons develop <br/>
+        - New persons mentor`,
+      technologies: ["js", "html", "css", "magento", "jquery", "react", "vue.js", "rwd"],
       clients: [
         "Internal",
         "Enea",
@@ -13,6 +28,8 @@
         "Carrefour",
         "Energa",
         "Distripark",
+        "Ikaurs",
+        "Yope"
       ],
       startDate: "03-2018",
       endDate: "",
